@@ -1,0 +1,2566 @@
+{
+    "packages": {
+        "g12com/tds-module": [
+            {
+                "name": "g12com/tds-module",
+                "version": "1.0.0",
+                "version_normalized": "1.0.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "http://git.at.home/G12/tds-module.git",
+                    "reference": "d9a089a8e04c089ced678fa0445b7131b5f0428f"
+                },
+                "require": {
+                    "illuminate/contracts": "^10.0",
+                    "lorisleiva/laravel-actions": "^2.7",
+                    "lorisleiva/lody": "^0.4.0",
+                    "php": "^8.2",
+                    "spatie/laravel-package-tools": "^1.14.0"
+                },
+                "require-dev": {
+                    "filament/filament": "^3.2",
+                    "laravel/pint": "^1.0",
+                    "livewire/livewire": "^3.4",
+                    "nunomaduro/collision": "^7.8",
+                    "orchestra/testbench": "^8.8",
+                    "pestphp/pest": "^2.20",
+                    "pestphp/pest-plugin-arch": "^2.0",
+                    "pestphp/pest-plugin-laravel": "^2.0"
+                },
+                "time": "2024-02-02T12:59:56+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "G12Com\\Module\\ModuleServiceProvider"
+                        ],
+                        "aliases": {
+                            "Module": "G12Com\\Module\\Facades\\Module"
+                        }
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "G12Com\\Module\\": "src/",
+                        "G12Com\\Module\\Database\\Factories\\": "database/factories/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "G12Com\\Module\\Tests\\": "tests/",
+                        "Workbench\\App\\": "workbench/app/"
+                    }
+                },
+                "scripts": {
+                    "post-autoload-dump": [
+                        "@composer run prepare"
+                    ],
+                    "clear": [
+                        "@php vendor/bin/testbench package:purge-tds-module --ansi"
+                    ],
+                    "prepare": [
+                        "@php vendor/bin/testbench package:discover --ansi"
+                    ],
+                    "build": [
+                        "@composer run prepare",
+                        "@php vendor/bin/testbench workbench:build --ansi"
+                    ],
+                    "start": [
+                        "Composer\\Config::disableProcessTimeout",
+                        "@composer run build",
+                        "@php vendor/bin/testbench serve"
+                    ],
+                    "analyse": [
+                        "vendor/bin/phpstan analyse"
+                    ],
+                    "test": [
+                        "vendor/bin/pest"
+                    ],
+                    "test-coverage": [
+                        "vendor/bin/pest --coverage"
+                    ],
+                    "format": [
+                        "vendor/bin/pint"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Dmytro Seredinov",
+                        "email": "dmytro.seredinov@gmail.com",
+                        "role": "Developer"
+                    }
+                ],
+                "description": "TDS Module Foundation",
+                "homepage": "https://github.com/g12com/tds-module",
+                "keywords": [
+                    "G12Com",
+                    "laravel",
+                    "tds-module"
+                ]
+            },
+            {
+                "name": "g12com/tds-module",
+                "version": "1.0.1",
+                "version_normalized": "1.0.1.0",
+                "source": {
+                    "type": "git",
+                    "url": "http://git.at.home/G12/tds-module.git",
+                    "reference": "90bfe1e5d8fde048686fb8aaaf6344b71173b6c8"
+                },
+                "require": {
+                    "illuminate/contracts": "^10.0",
+                    "lorisleiva/laravel-actions": "^2.7",
+                    "lorisleiva/lody": "^0.4.0",
+                    "php": "^8.2",
+                    "spatie/laravel-package-tools": "^1.14.0"
+                },
+                "require-dev": {
+                    "filament/filament": "^3.2",
+                    "laravel/pint": "^1.0",
+                    "livewire/livewire": "^3.4",
+                    "nunomaduro/collision": "^7.8",
+                    "orchestra/testbench": "^8.8",
+                    "pestphp/pest": "^2.20",
+                    "pestphp/pest-plugin-arch": "^2.0",
+                    "pestphp/pest-plugin-laravel": "^2.0"
+                },
+                "time": "2024-02-02T13:59:24+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "G12Com\\Module\\ModuleServiceProvider"
+                        ],
+                        "aliases": {
+                            "Module": "G12Com\\Module\\Facades\\Module"
+                        }
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "G12Com\\Module\\": "src/",
+                        "G12Com\\Module\\Database\\Factories\\": "database/factories/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "G12Com\\Module\\Tests\\": "tests/",
+                        "Workbench\\App\\": "workbench/app/"
+                    }
+                },
+                "scripts": {
+                    "post-autoload-dump": [
+                        "@composer run prepare"
+                    ],
+                    "clear": [
+                        "@php vendor/bin/testbench package:purge-tds-module --ansi"
+                    ],
+                    "prepare": [
+                        "@php vendor/bin/testbench package:discover --ansi"
+                    ],
+                    "build": [
+                        "@composer run prepare",
+                        "@php vendor/bin/testbench workbench:build --ansi"
+                    ],
+                    "start": [
+                        "Composer\\Config::disableProcessTimeout",
+                        "@composer run build",
+                        "@php vendor/bin/testbench serve"
+                    ],
+                    "analyse": [
+                        "vendor/bin/phpstan analyse"
+                    ],
+                    "test": [
+                        "vendor/bin/pest"
+                    ],
+                    "test-coverage": [
+                        "vendor/bin/pest --coverage"
+                    ],
+                    "format": [
+                        "vendor/bin/pint"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Dmytro Seredinov",
+                        "email": "dmytro.seredinov@gmail.com",
+                        "role": "Developer"
+                    }
+                ],
+                "description": "TDS Module Foundation",
+                "homepage": "https://github.com/g12com/tds-module",
+                "keywords": [
+                    "G12Com",
+                    "laravel",
+                    "tds-module"
+                ]
+            },
+            {
+                "name": "g12com/tds-module",
+                "version": "1.0.10",
+                "version_normalized": "1.0.10.0",
+                "source": {
+                    "type": "git",
+                    "url": "http://git.at.home/G12/tds-module.git",
+                    "reference": "8725449c6e33b5f9f55bc3a1c5d1feb23ae95c1b"
+                },
+                "require": {
+                    "archtechx/enums": "^1.0",
+                    "illuminate/contracts": "^10.0",
+                    "lorisleiva/laravel-actions": "^2.7",
+                    "lorisleiva/lody": "^0.4.0",
+                    "php": "^8.2",
+                    "spatie/laravel-data": "^3.11",
+                    "spatie/laravel-package-tools": "^1.14.0"
+                },
+                "require-dev": {
+                    "filament/filament": "^3.2",
+                    "laravel/pint": "^1.0",
+                    "livewire/livewire": "^3.4",
+                    "nunomaduro/collision": "^7.8",
+                    "orchestra/testbench": "^8.8",
+                    "pestphp/pest": "^2.20",
+                    "pestphp/pest-plugin-arch": "^2.0",
+                    "pestphp/pest-plugin-laravel": "^2.0",
+                    "tenancy/tenancy": "^2.2"
+                },
+                "time": "2024-02-14T11:00:30+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "G12Com\\Module\\ModuleServiceProvider"
+                        ],
+                        "aliases": {
+                            "Module": "G12Com\\Module\\Facades\\Module"
+                        }
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "G12Com\\Module\\": "src/",
+                        "G12Com\\Module\\Database\\Factories\\": "database/factories/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "G12Com\\Module\\Tests\\": "tests/",
+                        "Workbench\\App\\": "workbench/app/"
+                    }
+                },
+                "scripts": {
+                    "post-autoload-dump": [
+                        "@composer run prepare"
+                    ],
+                    "clear": [
+                        "@php vendor/bin/testbench package:purge-tds-module --ansi"
+                    ],
+                    "prepare": [
+                        "@php vendor/bin/testbench package:discover --ansi"
+                    ],
+                    "build": [
+                        "@composer run prepare",
+                        "@php vendor/bin/testbench workbench:build --ansi"
+                    ],
+                    "start": [
+                        "Composer\\Config::disableProcessTimeout",
+                        "@composer run build",
+                        "@php vendor/bin/testbench serve"
+                    ],
+                    "analyse": [
+                        "vendor/bin/phpstan analyse"
+                    ],
+                    "test": [
+                        "vendor/bin/pest"
+                    ],
+                    "test-coverage": [
+                        "vendor/bin/pest --coverage"
+                    ],
+                    "format": [
+                        "vendor/bin/pint"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Dmytro Seredinov",
+                        "email": "dmytro.seredinov@gmail.com",
+                        "role": "Developer"
+                    }
+                ],
+                "description": "TDS Module Foundation",
+                "homepage": "https://github.com/g12com/tds-module",
+                "keywords": [
+                    "G12Com",
+                    "laravel",
+                    "tds-module"
+                ]
+            },
+            {
+                "name": "g12com/tds-module",
+                "version": "1.0.11",
+                "version_normalized": "1.0.11.0",
+                "source": {
+                    "type": "git",
+                    "url": "http://git.at.home/G12/tds-module.git",
+                    "reference": "c13a60e2c3b435f66501d6126a9c143a958e5ad1"
+                },
+                "require": {
+                    "archtechx/enums": "^1.0",
+                    "illuminate/contracts": "^10.0",
+                    "lorisleiva/laravel-actions": "^2.7",
+                    "lorisleiva/lody": "^0.4.0",
+                    "php": "^8.2",
+                    "spatie/laravel-data": "^3.11",
+                    "spatie/laravel-package-tools": "^1.14.0"
+                },
+                "require-dev": {
+                    "filament/filament": "^3.2",
+                    "laravel/pint": "^1.0",
+                    "livewire/livewire": "^3.4",
+                    "nunomaduro/collision": "^7.8",
+                    "orchestra/testbench": "^8.8",
+                    "pestphp/pest": "^2.20",
+                    "pestphp/pest-plugin-arch": "^2.0",
+                    "pestphp/pest-plugin-laravel": "^2.0",
+                    "tenancy/tenancy": "^2.2"
+                },
+                "time": "2024-02-14T11:17:17+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "G12Com\\Module\\ModuleServiceProvider"
+                        ],
+                        "aliases": {
+                            "Module": "G12Com\\Module\\Facades\\Module"
+                        }
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "G12Com\\Module\\": "src/",
+                        "G12Com\\Module\\Database\\Factories\\": "database/factories/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "G12Com\\Module\\Tests\\": "tests/",
+                        "Workbench\\App\\": "workbench/app/"
+                    }
+                },
+                "scripts": {
+                    "post-autoload-dump": [
+                        "@composer run prepare"
+                    ],
+                    "clear": [
+                        "@php vendor/bin/testbench package:purge-tds-module --ansi"
+                    ],
+                    "prepare": [
+                        "@php vendor/bin/testbench package:discover --ansi"
+                    ],
+                    "build": [
+                        "@composer run prepare",
+                        "@php vendor/bin/testbench workbench:build --ansi"
+                    ],
+                    "start": [
+                        "Composer\\Config::disableProcessTimeout",
+                        "@composer run build",
+                        "@php vendor/bin/testbench serve"
+                    ],
+                    "analyse": [
+                        "vendor/bin/phpstan analyse"
+                    ],
+                    "test": [
+                        "vendor/bin/pest"
+                    ],
+                    "test-coverage": [
+                        "vendor/bin/pest --coverage"
+                    ],
+                    "format": [
+                        "vendor/bin/pint"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Dmytro Seredinov",
+                        "email": "dmytro.seredinov@gmail.com",
+                        "role": "Developer"
+                    }
+                ],
+                "description": "TDS Module Foundation",
+                "homepage": "https://github.com/g12com/tds-module",
+                "keywords": [
+                    "G12Com",
+                    "laravel",
+                    "tds-module"
+                ]
+            },
+            {
+                "name": "g12com/tds-module",
+                "version": "1.0.12",
+                "version_normalized": "1.0.12.0",
+                "source": {
+                    "type": "git",
+                    "url": "http://git.at.home/G12/tds-module.git",
+                    "reference": "abe692b86e096a9ed2859cd3f5378fd1238b2040"
+                },
+                "require": {
+                    "archtechx/enums": "^1.0",
+                    "illuminate/contracts": "^10.0",
+                    "lorisleiva/laravel-actions": "^2.7",
+                    "lorisleiva/lody": "^0.4.0",
+                    "php": "^8.2",
+                    "spatie/laravel-data": "^3.11",
+                    "spatie/laravel-package-tools": "^1.14.0"
+                },
+                "require-dev": {
+                    "filament/filament": "^3.2",
+                    "laravel/pint": "^1.0",
+                    "livewire/livewire": "^3.4",
+                    "nunomaduro/collision": "^7.8",
+                    "orchestra/testbench": "^8.8",
+                    "pestphp/pest": "^2.20",
+                    "pestphp/pest-plugin-arch": "^2.0",
+                    "pestphp/pest-plugin-laravel": "^2.0",
+                    "tenancy/tenancy": "^2.2"
+                },
+                "time": "2024-02-23T14:59:04+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "G12Com\\Module\\ModuleServiceProvider"
+                        ],
+                        "aliases": {
+                            "Module": "G12Com\\Module\\Facades\\Module"
+                        }
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "G12Com\\Module\\": "src/",
+                        "G12Com\\Module\\Database\\Factories\\": "database/factories/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "G12Com\\Module\\Tests\\": "tests/",
+                        "Workbench\\App\\": "workbench/app/"
+                    }
+                },
+                "scripts": {
+                    "post-autoload-dump": [
+                        "@composer run prepare"
+                    ],
+                    "clear": [
+                        "@php vendor/bin/testbench package:purge-tds-module --ansi"
+                    ],
+                    "prepare": [
+                        "@php vendor/bin/testbench package:discover --ansi"
+                    ],
+                    "build": [
+                        "@composer run prepare",
+                        "@php vendor/bin/testbench workbench:build --ansi"
+                    ],
+                    "start": [
+                        "Composer\\Config::disableProcessTimeout",
+                        "@composer run build",
+                        "@php vendor/bin/testbench serve"
+                    ],
+                    "analyse": [
+                        "vendor/bin/phpstan analyse"
+                    ],
+                    "test": [
+                        "vendor/bin/pest"
+                    ],
+                    "test-coverage": [
+                        "vendor/bin/pest --coverage"
+                    ],
+                    "format": [
+                        "vendor/bin/pint"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Dmytro Seredinov",
+                        "email": "dmytro.seredinov@gmail.com",
+                        "role": "Developer"
+                    }
+                ],
+                "description": "TDS Module Foundation",
+                "homepage": "https://github.com/g12com/tds-module",
+                "keywords": [
+                    "G12Com",
+                    "laravel",
+                    "tds-module"
+                ]
+            },
+            {
+                "name": "g12com/tds-module",
+                "version": "1.0.13",
+                "version_normalized": "1.0.13.0",
+                "source": {
+                    "type": "git",
+                    "url": "http://git.at.home/G12/tds-module.git",
+                    "reference": "e92ec5efbc52db2abdae07ab75b8f61d265c3531"
+                },
+                "require": {
+                    "archtechx/enums": "^1.0",
+                    "illuminate/contracts": "^10.0",
+                    "lorisleiva/laravel-actions": "^2.7",
+                    "lorisleiva/lody": "^0.4.0",
+                    "php": "^8.2",
+                    "spatie/laravel-data": "^3.11",
+                    "spatie/laravel-package-tools": "^1.14.0"
+                },
+                "require-dev": {
+                    "filament/filament": "^3.2",
+                    "laravel/pint": "^1.0",
+                    "livewire/livewire": "^3.4",
+                    "nunomaduro/collision": "^7.8",
+                    "orchestra/testbench": "^8.8",
+                    "pestphp/pest": "^2.20",
+                    "pestphp/pest-plugin-arch": "^2.0",
+                    "pestphp/pest-plugin-laravel": "^2.0",
+                    "tenancy/tenancy": "^2.2"
+                },
+                "time": "2024-02-23T16:57:17+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "G12Com\\Module\\ModuleServiceProvider"
+                        ],
+                        "aliases": {
+                            "Module": "G12Com\\Module\\Facades\\Module"
+                        }
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "G12Com\\Module\\": "src/",
+                        "G12Com\\Module\\Database\\Factories\\": "database/factories/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "G12Com\\Module\\Tests\\": "tests/",
+                        "Workbench\\App\\": "workbench/app/"
+                    }
+                },
+                "scripts": {
+                    "post-autoload-dump": [
+                        "@composer run prepare"
+                    ],
+                    "clear": [
+                        "@php vendor/bin/testbench package:purge-tds-module --ansi"
+                    ],
+                    "prepare": [
+                        "@php vendor/bin/testbench package:discover --ansi"
+                    ],
+                    "build": [
+                        "@composer run prepare",
+                        "@php vendor/bin/testbench workbench:build --ansi"
+                    ],
+                    "start": [
+                        "Composer\\Config::disableProcessTimeout",
+                        "@composer run build",
+                        "@php vendor/bin/testbench serve"
+                    ],
+                    "analyse": [
+                        "vendor/bin/phpstan analyse"
+                    ],
+                    "test": [
+                        "vendor/bin/pest"
+                    ],
+                    "test-coverage": [
+                        "vendor/bin/pest --coverage"
+                    ],
+                    "format": [
+                        "vendor/bin/pint"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Dmytro Seredinov",
+                        "email": "dmytro.seredinov@gmail.com",
+                        "role": "Developer"
+                    }
+                ],
+                "description": "TDS Module Foundation",
+                "homepage": "https://github.com/g12com/tds-module",
+                "keywords": [
+                    "G12Com",
+                    "laravel",
+                    "tds-module"
+                ]
+            },
+            {
+                "name": "g12com/tds-module",
+                "version": "1.0.14",
+                "version_normalized": "1.0.14.0",
+                "source": {
+                    "type": "git",
+                    "url": "http://git.at.home/G12/tds-module.git",
+                    "reference": "45d020aff5210c065bbedadf67c91a26869e80d4"
+                },
+                "require": {
+                    "archtechx/enums": "^1.0",
+                    "illuminate/contracts": "^10.0",
+                    "lorisleiva/laravel-actions": "^2.7",
+                    "lorisleiva/lody": "^0.4.0",
+                    "php": "^8.2",
+                    "spatie/laravel-data": "^3.11",
+                    "spatie/laravel-package-tools": "^1.14.0"
+                },
+                "require-dev": {
+                    "filament/filament": "^3.2",
+                    "laravel/pint": "^1.0",
+                    "livewire/livewire": "^3.4",
+                    "nunomaduro/collision": "^7.8",
+                    "orchestra/testbench": "^8.8",
+                    "pestphp/pest": "^2.20",
+                    "pestphp/pest-plugin-arch": "^2.0",
+                    "pestphp/pest-plugin-laravel": "^2.0",
+                    "tenancy/tenancy": "^2.2"
+                },
+                "time": "2024-02-24T15:42:42+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "G12Com\\Module\\ModuleServiceProvider"
+                        ],
+                        "aliases": {
+                            "Module": "G12Com\\Module\\Facades\\Module"
+                        }
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "G12Com\\Module\\": "src/",
+                        "G12Com\\Module\\Database\\Factories\\": "database/factories/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "G12Com\\Module\\Tests\\": "tests/",
+                        "Workbench\\App\\": "workbench/app/"
+                    }
+                },
+                "scripts": {
+                    "post-autoload-dump": [
+                        "@composer run prepare"
+                    ],
+                    "clear": [
+                        "@php vendor/bin/testbench package:purge-tds-module --ansi"
+                    ],
+                    "prepare": [
+                        "@php vendor/bin/testbench package:discover --ansi"
+                    ],
+                    "build": [
+                        "@composer run prepare",
+                        "@php vendor/bin/testbench workbench:build --ansi"
+                    ],
+                    "start": [
+                        "Composer\\Config::disableProcessTimeout",
+                        "@composer run build",
+                        "@php vendor/bin/testbench serve"
+                    ],
+                    "analyse": [
+                        "vendor/bin/phpstan analyse"
+                    ],
+                    "test": [
+                        "vendor/bin/pest"
+                    ],
+                    "test-coverage": [
+                        "vendor/bin/pest --coverage"
+                    ],
+                    "format": [
+                        "vendor/bin/pint"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Dmytro Seredinov",
+                        "email": "dmytro.seredinov@gmail.com",
+                        "role": "Developer"
+                    }
+                ],
+                "description": "TDS Module Foundation",
+                "homepage": "https://github.com/g12com/tds-module",
+                "keywords": [
+                    "G12Com",
+                    "laravel",
+                    "tds-module"
+                ]
+            },
+            {
+                "name": "g12com/tds-module",
+                "version": "1.0.15",
+                "version_normalized": "1.0.15.0",
+                "source": {
+                    "type": "git",
+                    "url": "http://git.at.home/G12/tds-module.git",
+                    "reference": "cb5d21c3dff3004a7be509a85ccd75bdc6461642"
+                },
+                "require": {
+                    "archtechx/enums": "^1.0",
+                    "illuminate/contracts": "^10.0",
+                    "lorisleiva/laravel-actions": "^2.7",
+                    "lorisleiva/lody": "^0.4.0",
+                    "php": "^8.2",
+                    "spatie/laravel-data": "^3.11",
+                    "spatie/laravel-package-tools": "^1.14.0"
+                },
+                "require-dev": {
+                    "filament/filament": "^3.2",
+                    "laravel/pint": "^1.0",
+                    "livewire/livewire": "^3.4",
+                    "nunomaduro/collision": "^7.8",
+                    "orchestra/testbench": "^8.8",
+                    "pestphp/pest": "^2.20",
+                    "pestphp/pest-plugin-arch": "^2.0",
+                    "pestphp/pest-plugin-laravel": "^2.0",
+                    "tenancy/tenancy": "^2.2"
+                },
+                "time": "2024-02-24T15:53:32+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "G12Com\\Module\\ModuleServiceProvider"
+                        ],
+                        "aliases": {
+                            "Module": "G12Com\\Module\\Facades\\Module"
+                        }
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "G12Com\\Module\\": "src/",
+                        "G12Com\\Module\\Database\\Factories\\": "database/factories/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "G12Com\\Module\\Tests\\": "tests/",
+                        "Workbench\\App\\": "workbench/app/"
+                    }
+                },
+                "scripts": {
+                    "post-autoload-dump": [
+                        "@composer run prepare"
+                    ],
+                    "clear": [
+                        "@php vendor/bin/testbench package:purge-tds-module --ansi"
+                    ],
+                    "prepare": [
+                        "@php vendor/bin/testbench package:discover --ansi"
+                    ],
+                    "build": [
+                        "@composer run prepare",
+                        "@php vendor/bin/testbench workbench:build --ansi"
+                    ],
+                    "start": [
+                        "Composer\\Config::disableProcessTimeout",
+                        "@composer run build",
+                        "@php vendor/bin/testbench serve"
+                    ],
+                    "analyse": [
+                        "vendor/bin/phpstan analyse"
+                    ],
+                    "test": [
+                        "vendor/bin/pest"
+                    ],
+                    "test-coverage": [
+                        "vendor/bin/pest --coverage"
+                    ],
+                    "format": [
+                        "vendor/bin/pint"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Dmytro Seredinov",
+                        "email": "dmytro.seredinov@gmail.com",
+                        "role": "Developer"
+                    }
+                ],
+                "description": "TDS Module Foundation",
+                "homepage": "https://github.com/g12com/tds-module",
+                "keywords": [
+                    "G12Com",
+                    "laravel",
+                    "tds-module"
+                ]
+            },
+            {
+                "name": "g12com/tds-module",
+                "version": "1.0.16",
+                "version_normalized": "1.0.16.0",
+                "source": {
+                    "type": "git",
+                    "url": "http://git.at.home/G12/tds-module.git",
+                    "reference": "ef14164fdb7c30b997fa2fe75ff1e869ba0244fc"
+                },
+                "require": {
+                    "archtechx/enums": "^1.0",
+                    "illuminate/contracts": "^10.0",
+                    "lorisleiva/laravel-actions": "^2.7",
+                    "lorisleiva/lody": "^0.4.0",
+                    "php": "^8.2",
+                    "spatie/laravel-data": "^3.11",
+                    "spatie/laravel-package-tools": "^1.14.0"
+                },
+                "require-dev": {
+                    "filament/filament": "^3.2",
+                    "laravel/pint": "^1.0",
+                    "livewire/livewire": "^3.4",
+                    "nunomaduro/collision": "^7.8",
+                    "orchestra/testbench": "^8.8",
+                    "pestphp/pest": "^2.20",
+                    "pestphp/pest-plugin-arch": "^2.0",
+                    "pestphp/pest-plugin-laravel": "^2.0",
+                    "tenancy/tenancy": "^2.2"
+                },
+                "time": "2024-02-24T16:37:41+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "G12Com\\Module\\ModuleServiceProvider"
+                        ],
+                        "aliases": {
+                            "Module": "G12Com\\Module\\Facades\\Module"
+                        }
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "G12Com\\Module\\": "src/",
+                        "G12Com\\Module\\Database\\Factories\\": "database/factories/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "G12Com\\Module\\Tests\\": "tests/",
+                        "Workbench\\App\\": "workbench/app/"
+                    }
+                },
+                "scripts": {
+                    "post-autoload-dump": [
+                        "@composer run prepare"
+                    ],
+                    "clear": [
+                        "@php vendor/bin/testbench package:purge-tds-module --ansi"
+                    ],
+                    "prepare": [
+                        "@php vendor/bin/testbench package:discover --ansi"
+                    ],
+                    "build": [
+                        "@composer run prepare",
+                        "@php vendor/bin/testbench workbench:build --ansi"
+                    ],
+                    "start": [
+                        "Composer\\Config::disableProcessTimeout",
+                        "@composer run build",
+                        "@php vendor/bin/testbench serve"
+                    ],
+                    "analyse": [
+                        "vendor/bin/phpstan analyse"
+                    ],
+                    "test": [
+                        "vendor/bin/pest"
+                    ],
+                    "test-coverage": [
+                        "vendor/bin/pest --coverage"
+                    ],
+                    "format": [
+                        "vendor/bin/pint"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Dmytro Seredinov",
+                        "email": "dmytro.seredinov@gmail.com",
+                        "role": "Developer"
+                    }
+                ],
+                "description": "TDS Module Foundation",
+                "homepage": "https://github.com/g12com/tds-module",
+                "keywords": [
+                    "G12Com",
+                    "laravel",
+                    "tds-module"
+                ]
+            },
+            {
+                "name": "g12com/tds-module",
+                "version": "1.0.17",
+                "version_normalized": "1.0.17.0",
+                "source": {
+                    "type": "git",
+                    "url": "http://git.at.home/G12/tds-module.git",
+                    "reference": "aa98d515fb6853d3279dce9e2e2a7f44ccef6ae6"
+                },
+                "require": {
+                    "archtechx/enums": "^1.0",
+                    "illuminate/contracts": "^10.0",
+                    "lorisleiva/laravel-actions": "^2.7",
+                    "lorisleiva/lody": "^0.4.0",
+                    "php": "^8.2",
+                    "spatie/laravel-data": "^3.11",
+                    "spatie/laravel-package-tools": "^1.14.0"
+                },
+                "require-dev": {
+                    "filament/filament": "^3.2",
+                    "laravel/pint": "^1.0",
+                    "livewire/livewire": "^3.4",
+                    "nunomaduro/collision": "^7.8",
+                    "orchestra/testbench": "^8.8",
+                    "pestphp/pest": "^2.20",
+                    "pestphp/pest-plugin-arch": "^2.0",
+                    "pestphp/pest-plugin-laravel": "^2.0",
+                    "tenancy/tenancy": "^2.2"
+                },
+                "time": "2024-02-24T16:57:05+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "G12Com\\Module\\ModuleServiceProvider"
+                        ],
+                        "aliases": {
+                            "Module": "G12Com\\Module\\Facades\\Module"
+                        }
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "G12Com\\Module\\": "src/",
+                        "G12Com\\Module\\Database\\Factories\\": "database/factories/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "G12Com\\Module\\Tests\\": "tests/",
+                        "Workbench\\App\\": "workbench/app/"
+                    }
+                },
+                "scripts": {
+                    "post-autoload-dump": [
+                        "@composer run prepare"
+                    ],
+                    "clear": [
+                        "@php vendor/bin/testbench package:purge-tds-module --ansi"
+                    ],
+                    "prepare": [
+                        "@php vendor/bin/testbench package:discover --ansi"
+                    ],
+                    "build": [
+                        "@composer run prepare",
+                        "@php vendor/bin/testbench workbench:build --ansi"
+                    ],
+                    "start": [
+                        "Composer\\Config::disableProcessTimeout",
+                        "@composer run build",
+                        "@php vendor/bin/testbench serve"
+                    ],
+                    "analyse": [
+                        "vendor/bin/phpstan analyse"
+                    ],
+                    "test": [
+                        "vendor/bin/pest"
+                    ],
+                    "test-coverage": [
+                        "vendor/bin/pest --coverage"
+                    ],
+                    "format": [
+                        "vendor/bin/pint"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Dmytro Seredinov",
+                        "email": "dmytro.seredinov@gmail.com",
+                        "role": "Developer"
+                    }
+                ],
+                "description": "TDS Module Foundation",
+                "homepage": "https://github.com/g12com/tds-module",
+                "keywords": [
+                    "G12Com",
+                    "laravel",
+                    "tds-module"
+                ]
+            },
+            {
+                "name": "g12com/tds-module",
+                "version": "1.0.18",
+                "version_normalized": "1.0.18.0",
+                "source": {
+                    "type": "git",
+                    "url": "http://git.at.home/G12/tds-module.git",
+                    "reference": "449f0f3149f4936ae23bf28e9b38d946135e6f0d"
+                },
+                "require": {
+                    "archtechx/enums": "^1.0",
+                    "illuminate/contracts": "^10.0",
+                    "lorisleiva/laravel-actions": "^2.7",
+                    "lorisleiva/lody": "^0.4.0",
+                    "php": "^8.2",
+                    "spatie/laravel-data": "^3.11",
+                    "spatie/laravel-package-tools": "^1.14.0"
+                },
+                "require-dev": {
+                    "filament/filament": "^3.2",
+                    "laravel/pint": "^1.0",
+                    "livewire/livewire": "^3.4",
+                    "nunomaduro/collision": "^7.8",
+                    "orchestra/testbench": "^8.8",
+                    "pestphp/pest": "^2.20",
+                    "pestphp/pest-plugin-arch": "^2.0",
+                    "pestphp/pest-plugin-laravel": "^2.0",
+                    "tenancy/tenancy": "^2.2"
+                },
+                "time": "2024-02-24T17:06:42+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "G12Com\\Module\\ModuleServiceProvider"
+                        ],
+                        "aliases": {
+                            "Module": "G12Com\\Module\\Facades\\Module"
+                        }
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "G12Com\\Module\\": "src/",
+                        "G12Com\\Module\\Database\\Factories\\": "database/factories/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "G12Com\\Module\\Tests\\": "tests/",
+                        "Workbench\\App\\": "workbench/app/"
+                    }
+                },
+                "scripts": {
+                    "post-autoload-dump": [
+                        "@composer run prepare"
+                    ],
+                    "clear": [
+                        "@php vendor/bin/testbench package:purge-tds-module --ansi"
+                    ],
+                    "prepare": [
+                        "@php vendor/bin/testbench package:discover --ansi"
+                    ],
+                    "build": [
+                        "@composer run prepare",
+                        "@php vendor/bin/testbench workbench:build --ansi"
+                    ],
+                    "start": [
+                        "Composer\\Config::disableProcessTimeout",
+                        "@composer run build",
+                        "@php vendor/bin/testbench serve"
+                    ],
+                    "analyse": [
+                        "vendor/bin/phpstan analyse"
+                    ],
+                    "test": [
+                        "vendor/bin/pest"
+                    ],
+                    "test-coverage": [
+                        "vendor/bin/pest --coverage"
+                    ],
+                    "format": [
+                        "vendor/bin/pint"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Dmytro Seredinov",
+                        "email": "dmytro.seredinov@gmail.com",
+                        "role": "Developer"
+                    }
+                ],
+                "description": "TDS Module Foundation",
+                "homepage": "https://github.com/g12com/tds-module",
+                "keywords": [
+                    "G12Com",
+                    "laravel",
+                    "tds-module"
+                ]
+            },
+            {
+                "name": "g12com/tds-module",
+                "version": "1.0.19",
+                "version_normalized": "1.0.19.0",
+                "source": {
+                    "type": "git",
+                    "url": "http://git.at.home/G12/tds-module.git",
+                    "reference": "7da05e58a9cda853a8928a90747926b8ba33fc83"
+                },
+                "require": {
+                    "archtechx/enums": "^1.0",
+                    "illuminate/contracts": "^10.0",
+                    "lorisleiva/laravel-actions": "^2.7",
+                    "lorisleiva/lody": "^0.4.0",
+                    "php": "^8.2",
+                    "spatie/laravel-data": "^3.11",
+                    "spatie/laravel-package-tools": "^1.14.0"
+                },
+                "require-dev": {
+                    "filament/filament": "^3.2",
+                    "laravel/pint": "^1.0",
+                    "livewire/livewire": "^3.4",
+                    "nunomaduro/collision": "^7.8",
+                    "orchestra/testbench": "^8.8",
+                    "pestphp/pest": "^2.20",
+                    "pestphp/pest-plugin-arch": "^2.0",
+                    "pestphp/pest-plugin-laravel": "^2.0",
+                    "tenancy/tenancy": "^2.2"
+                },
+                "time": "2024-02-24T17:09:38+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "G12Com\\Module\\ModuleServiceProvider"
+                        ],
+                        "aliases": {
+                            "Module": "G12Com\\Module\\Facades\\Module"
+                        }
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "G12Com\\Module\\": "src/",
+                        "G12Com\\Module\\Database\\Factories\\": "database/factories/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "G12Com\\Module\\Tests\\": "tests/",
+                        "Workbench\\App\\": "workbench/app/"
+                    }
+                },
+                "scripts": {
+                    "post-autoload-dump": [
+                        "@composer run prepare"
+                    ],
+                    "clear": [
+                        "@php vendor/bin/testbench package:purge-tds-module --ansi"
+                    ],
+                    "prepare": [
+                        "@php vendor/bin/testbench package:discover --ansi"
+                    ],
+                    "build": [
+                        "@composer run prepare",
+                        "@php vendor/bin/testbench workbench:build --ansi"
+                    ],
+                    "start": [
+                        "Composer\\Config::disableProcessTimeout",
+                        "@composer run build",
+                        "@php vendor/bin/testbench serve"
+                    ],
+                    "analyse": [
+                        "vendor/bin/phpstan analyse"
+                    ],
+                    "test": [
+                        "vendor/bin/pest"
+                    ],
+                    "test-coverage": [
+                        "vendor/bin/pest --coverage"
+                    ],
+                    "format": [
+                        "vendor/bin/pint"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Dmytro Seredinov",
+                        "email": "dmytro.seredinov@gmail.com",
+                        "role": "Developer"
+                    }
+                ],
+                "description": "TDS Module Foundation",
+                "homepage": "https://github.com/g12com/tds-module",
+                "keywords": [
+                    "G12Com",
+                    "laravel",
+                    "tds-module"
+                ]
+            },
+            {
+                "name": "g12com/tds-module",
+                "version": "1.0.2",
+                "version_normalized": "1.0.2.0",
+                "source": {
+                    "type": "git",
+                    "url": "http://git.at.home/G12/tds-module.git",
+                    "reference": "984289a1dbca58978f74842df85b683da78147b8"
+                },
+                "require": {
+                    "illuminate/contracts": "^10.0",
+                    "lorisleiva/laravel-actions": "^2.7",
+                    "lorisleiva/lody": "^0.4.0",
+                    "php": "^8.2",
+                    "spatie/laravel-package-tools": "^1.14.0"
+                },
+                "require-dev": {
+                    "filament/filament": "^3.2",
+                    "laravel/pint": "^1.0",
+                    "livewire/livewire": "^3.4",
+                    "nunomaduro/collision": "^7.8",
+                    "orchestra/testbench": "^8.8",
+                    "pestphp/pest": "^2.20",
+                    "pestphp/pest-plugin-arch": "^2.0",
+                    "pestphp/pest-plugin-laravel": "^2.0"
+                },
+                "time": "2024-02-02T15:26:38+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "G12Com\\Module\\ModuleServiceProvider"
+                        ],
+                        "aliases": {
+                            "Module": "G12Com\\Module\\Facades\\Module"
+                        }
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "G12Com\\Module\\": "src/",
+                        "G12Com\\Module\\Database\\Factories\\": "database/factories/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "G12Com\\Module\\Tests\\": "tests/",
+                        "Workbench\\App\\": "workbench/app/"
+                    }
+                },
+                "scripts": {
+                    "post-autoload-dump": [
+                        "@composer run prepare"
+                    ],
+                    "clear": [
+                        "@php vendor/bin/testbench package:purge-tds-module --ansi"
+                    ],
+                    "prepare": [
+                        "@php vendor/bin/testbench package:discover --ansi"
+                    ],
+                    "build": [
+                        "@composer run prepare",
+                        "@php vendor/bin/testbench workbench:build --ansi"
+                    ],
+                    "start": [
+                        "Composer\\Config::disableProcessTimeout",
+                        "@composer run build",
+                        "@php vendor/bin/testbench serve"
+                    ],
+                    "analyse": [
+                        "vendor/bin/phpstan analyse"
+                    ],
+                    "test": [
+                        "vendor/bin/pest"
+                    ],
+                    "test-coverage": [
+                        "vendor/bin/pest --coverage"
+                    ],
+                    "format": [
+                        "vendor/bin/pint"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Dmytro Seredinov",
+                        "email": "dmytro.seredinov@gmail.com",
+                        "role": "Developer"
+                    }
+                ],
+                "description": "TDS Module Foundation",
+                "homepage": "https://github.com/g12com/tds-module",
+                "keywords": [
+                    "G12Com",
+                    "laravel",
+                    "tds-module"
+                ]
+            },
+            {
+                "name": "g12com/tds-module",
+                "version": "1.0.20",
+                "version_normalized": "1.0.20.0",
+                "source": {
+                    "type": "git",
+                    "url": "http://git.at.home/G12/tds-module.git",
+                    "reference": "1d2b3ba458693a31381fb08f23c788503d63ec40"
+                },
+                "require": {
+                    "archtechx/enums": "^1.0",
+                    "illuminate/contracts": "^10.0",
+                    "lorisleiva/laravel-actions": "^2.7",
+                    "lorisleiva/lody": "^0.4.0",
+                    "php": "^8.2",
+                    "spatie/laravel-data": "^3.11",
+                    "spatie/laravel-package-tools": "^1.14.0"
+                },
+                "require-dev": {
+                    "filament/filament": "^3.2",
+                    "laravel/pint": "^1.0",
+                    "livewire/livewire": "^3.4",
+                    "nunomaduro/collision": "^7.8",
+                    "orchestra/testbench": "^8.8",
+                    "pestphp/pest": "^2.20",
+                    "pestphp/pest-plugin-arch": "^2.0",
+                    "pestphp/pest-plugin-laravel": "^2.0",
+                    "tenancy/tenancy": "^2.2"
+                },
+                "time": "2024-02-25T13:05:30+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "G12Com\\Module\\ModuleServiceProvider"
+                        ],
+                        "aliases": {
+                            "Module": "G12Com\\Module\\Facades\\Module"
+                        }
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "G12Com\\Module\\": "src/",
+                        "G12Com\\Module\\Database\\Factories\\": "database/factories/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "G12Com\\Module\\Tests\\": "tests/",
+                        "Workbench\\App\\": "workbench/app/"
+                    }
+                },
+                "scripts": {
+                    "post-autoload-dump": [
+                        "@composer run prepare"
+                    ],
+                    "clear": [
+                        "@php vendor/bin/testbench package:purge-tds-module --ansi"
+                    ],
+                    "prepare": [
+                        "@php vendor/bin/testbench package:discover --ansi"
+                    ],
+                    "build": [
+                        "@composer run prepare",
+                        "@php vendor/bin/testbench workbench:build --ansi"
+                    ],
+                    "start": [
+                        "Composer\\Config::disableProcessTimeout",
+                        "@composer run build",
+                        "@php vendor/bin/testbench serve"
+                    ],
+                    "analyse": [
+                        "vendor/bin/phpstan analyse"
+                    ],
+                    "test": [
+                        "vendor/bin/pest"
+                    ],
+                    "test-coverage": [
+                        "vendor/bin/pest --coverage"
+                    ],
+                    "format": [
+                        "vendor/bin/pint"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Dmytro Seredinov",
+                        "email": "dmytro.seredinov@gmail.com",
+                        "role": "Developer"
+                    }
+                ],
+                "description": "TDS Module Foundation",
+                "homepage": "https://github.com/g12com/tds-module",
+                "keywords": [
+                    "G12Com",
+                    "laravel",
+                    "tds-module"
+                ]
+            },
+            {
+                "name": "g12com/tds-module",
+                "version": "1.0.21",
+                "version_normalized": "1.0.21.0",
+                "source": {
+                    "type": "git",
+                    "url": "http://git.at.home/G12/tds-module.git",
+                    "reference": "ae8f460a422d733771c87bfa53e09563f1a61ff2"
+                },
+                "require": {
+                    "archtechx/enums": "^1.0",
+                    "illuminate/contracts": "^10.0",
+                    "lorisleiva/laravel-actions": "^2.7",
+                    "lorisleiva/lody": "^0.4.0",
+                    "php": "^8.2",
+                    "spatie/laravel-data": "^3.11",
+                    "spatie/laravel-package-tools": "^1.14.0"
+                },
+                "require-dev": {
+                    "filament/filament": "^3.2",
+                    "laravel/pint": "^1.0",
+                    "livewire/livewire": "^3.4",
+                    "nunomaduro/collision": "^7.8",
+                    "orchestra/testbench": "^8.8",
+                    "pestphp/pest": "^2.20",
+                    "pestphp/pest-plugin-arch": "^2.0",
+                    "pestphp/pest-plugin-laravel": "^2.0",
+                    "tenancy/tenancy": "^2.2"
+                },
+                "time": "2024-02-25T13:44:45+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "G12Com\\Module\\ModuleServiceProvider"
+                        ],
+                        "aliases": {
+                            "Module": "G12Com\\Module\\Facades\\Module"
+                        }
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "G12Com\\Module\\": "src/",
+                        "G12Com\\Module\\Database\\Factories\\": "database/factories/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "G12Com\\Module\\Tests\\": "tests/",
+                        "Workbench\\App\\": "workbench/app/"
+                    }
+                },
+                "scripts": {
+                    "post-autoload-dump": [
+                        "@composer run prepare"
+                    ],
+                    "clear": [
+                        "@php vendor/bin/testbench package:purge-tds-module --ansi"
+                    ],
+                    "prepare": [
+                        "@php vendor/bin/testbench package:discover --ansi"
+                    ],
+                    "build": [
+                        "@composer run prepare",
+                        "@php vendor/bin/testbench workbench:build --ansi"
+                    ],
+                    "start": [
+                        "Composer\\Config::disableProcessTimeout",
+                        "@composer run build",
+                        "@php vendor/bin/testbench serve"
+                    ],
+                    "analyse": [
+                        "vendor/bin/phpstan analyse"
+                    ],
+                    "test": [
+                        "vendor/bin/pest"
+                    ],
+                    "test-coverage": [
+                        "vendor/bin/pest --coverage"
+                    ],
+                    "format": [
+                        "vendor/bin/pint"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Dmytro Seredinov",
+                        "email": "dmytro.seredinov@gmail.com",
+                        "role": "Developer"
+                    }
+                ],
+                "description": "TDS Module Foundation",
+                "homepage": "https://github.com/g12com/tds-module",
+                "keywords": [
+                    "G12Com",
+                    "laravel",
+                    "tds-module"
+                ]
+            },
+            {
+                "name": "g12com/tds-module",
+                "version": "1.0.22",
+                "version_normalized": "1.0.22.0",
+                "source": {
+                    "type": "git",
+                    "url": "http://git.at.home/G12/tds-module.git",
+                    "reference": "175af8242fad5b6b8229778cad925ca1c8650f4d"
+                },
+                "require": {
+                    "archtechx/enums": "^1.0",
+                    "illuminate/contracts": "^10.0",
+                    "lorisleiva/laravel-actions": "^2.7",
+                    "lorisleiva/lody": "^0.4.0",
+                    "php": "^8.2",
+                    "spatie/laravel-data": "^3.11",
+                    "spatie/laravel-package-tools": "^1.14.0"
+                },
+                "require-dev": {
+                    "filament/filament": "^3.2",
+                    "laravel/pint": "^1.0",
+                    "livewire/livewire": "^3.4",
+                    "nunomaduro/collision": "^7.8",
+                    "orchestra/testbench": "^8.8",
+                    "pestphp/pest": "^2.20",
+                    "pestphp/pest-plugin-arch": "^2.0",
+                    "pestphp/pest-plugin-laravel": "^2.0",
+                    "tenancy/tenancy": "^2.2"
+                },
+                "time": "2024-02-25T13:57:58+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "G12Com\\Module\\ModuleServiceProvider"
+                        ],
+                        "aliases": {
+                            "Module": "G12Com\\Module\\Facades\\Module"
+                        }
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "G12Com\\Module\\": "src/",
+                        "G12Com\\Module\\Database\\Factories\\": "database/factories/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "G12Com\\Module\\Tests\\": "tests/",
+                        "Workbench\\App\\": "workbench/app/"
+                    }
+                },
+                "scripts": {
+                    "post-autoload-dump": [
+                        "@composer run prepare"
+                    ],
+                    "clear": [
+                        "@php vendor/bin/testbench package:purge-tds-module --ansi"
+                    ],
+                    "prepare": [
+                        "@php vendor/bin/testbench package:discover --ansi"
+                    ],
+                    "build": [
+                        "@composer run prepare",
+                        "@php vendor/bin/testbench workbench:build --ansi"
+                    ],
+                    "start": [
+                        "Composer\\Config::disableProcessTimeout",
+                        "@composer run build",
+                        "@php vendor/bin/testbench serve"
+                    ],
+                    "analyse": [
+                        "vendor/bin/phpstan analyse"
+                    ],
+                    "test": [
+                        "vendor/bin/pest"
+                    ],
+                    "test-coverage": [
+                        "vendor/bin/pest --coverage"
+                    ],
+                    "format": [
+                        "vendor/bin/pint"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Dmytro Seredinov",
+                        "email": "dmytro.seredinov@gmail.com",
+                        "role": "Developer"
+                    }
+                ],
+                "description": "TDS Module Foundation",
+                "homepage": "https://github.com/g12com/tds-module",
+                "keywords": [
+                    "G12Com",
+                    "laravel",
+                    "tds-module"
+                ]
+            },
+            {
+                "name": "g12com/tds-module",
+                "version": "1.0.23",
+                "version_normalized": "1.0.23.0",
+                "source": {
+                    "type": "git",
+                    "url": "http://git.at.home/G12/tds-module.git",
+                    "reference": "9c14c2e9a174250b1ca2a84d4b12e554cf977bcc"
+                },
+                "require": {
+                    "archtechx/enums": "^1.0",
+                    "illuminate/contracts": "^10.0",
+                    "lorisleiva/laravel-actions": "^2.7",
+                    "lorisleiva/lody": "^0.4.0",
+                    "php": "^8.2",
+                    "spatie/laravel-data": "^3.11",
+                    "spatie/laravel-package-tools": "^1.14.0"
+                },
+                "require-dev": {
+                    "filament/filament": "^3.2",
+                    "laravel/pint": "^1.0",
+                    "livewire/livewire": "^3.4",
+                    "nunomaduro/collision": "^7.8",
+                    "orchestra/testbench": "^8.8",
+                    "pestphp/pest": "^2.20",
+                    "pestphp/pest-plugin-arch": "^2.0",
+                    "pestphp/pest-plugin-laravel": "^2.0",
+                    "tenancy/tenancy": "^2.2"
+                },
+                "time": "2024-02-26T11:42:30+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "G12Com\\Module\\ModuleServiceProvider"
+                        ],
+                        "aliases": {
+                            "Module": "G12Com\\Module\\Facades\\Module"
+                        }
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "G12Com\\Module\\": "src/",
+                        "G12Com\\Module\\Database\\Factories\\": "database/factories/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "G12Com\\Module\\Tests\\": "tests/",
+                        "Workbench\\App\\": "workbench/app/"
+                    }
+                },
+                "scripts": {
+                    "post-autoload-dump": [
+                        "@composer run prepare"
+                    ],
+                    "clear": [
+                        "@php vendor/bin/testbench package:purge-tds-module --ansi"
+                    ],
+                    "prepare": [
+                        "@php vendor/bin/testbench package:discover --ansi"
+                    ],
+                    "build": [
+                        "@composer run prepare",
+                        "@php vendor/bin/testbench workbench:build --ansi"
+                    ],
+                    "start": [
+                        "Composer\\Config::disableProcessTimeout",
+                        "@composer run build",
+                        "@php vendor/bin/testbench serve"
+                    ],
+                    "analyse": [
+                        "vendor/bin/phpstan analyse"
+                    ],
+                    "test": [
+                        "vendor/bin/pest"
+                    ],
+                    "test-coverage": [
+                        "vendor/bin/pest --coverage"
+                    ],
+                    "format": [
+                        "vendor/bin/pint"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Dmytro Seredinov",
+                        "email": "dmytro.seredinov@gmail.com",
+                        "role": "Developer"
+                    }
+                ],
+                "description": "TDS Module Foundation",
+                "homepage": "https://github.com/g12com/tds-module",
+                "keywords": [
+                    "G12Com",
+                    "laravel",
+                    "tds-module"
+                ]
+            },
+            {
+                "name": "g12com/tds-module",
+                "version": "1.0.24",
+                "version_normalized": "1.0.24.0",
+                "source": {
+                    "type": "git",
+                    "url": "http://git.at.home/G12/tds-module.git",
+                    "reference": "44264d128a6a04eca6f3111cf9f5867885fcda78"
+                },
+                "require": {
+                    "archtechx/enums": "^1.0",
+                    "illuminate/contracts": "^10.0",
+                    "lorisleiva/laravel-actions": "^2.7",
+                    "lorisleiva/lody": "^0.4.0",
+                    "php": "^8.2",
+                    "spatie/laravel-data": "^3.11",
+                    "spatie/laravel-package-tools": "^1.14.0"
+                },
+                "require-dev": {
+                    "filament/filament": "^3.2",
+                    "laravel/pint": "^1.0",
+                    "livewire/livewire": "^3.4",
+                    "nunomaduro/collision": "^7.8",
+                    "orchestra/testbench": "^8.8",
+                    "pestphp/pest": "^2.20",
+                    "pestphp/pest-plugin-arch": "^2.0",
+                    "pestphp/pest-plugin-laravel": "^2.0",
+                    "tenancy/tenancy": "^2.2"
+                },
+                "time": "2024-02-26T12:38:27+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "G12Com\\Module\\ModuleServiceProvider"
+                        ],
+                        "aliases": {
+                            "Module": "G12Com\\Module\\Facades\\Module"
+                        }
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "G12Com\\Module\\": "src/",
+                        "G12Com\\Module\\Database\\Factories\\": "database/factories/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "G12Com\\Module\\Tests\\": "tests/",
+                        "Workbench\\App\\": "workbench/app/"
+                    }
+                },
+                "scripts": {
+                    "post-autoload-dump": [
+                        "@composer run prepare"
+                    ],
+                    "clear": [
+                        "@php vendor/bin/testbench package:purge-tds-module --ansi"
+                    ],
+                    "prepare": [
+                        "@php vendor/bin/testbench package:discover --ansi"
+                    ],
+                    "build": [
+                        "@composer run prepare",
+                        "@php vendor/bin/testbench workbench:build --ansi"
+                    ],
+                    "start": [
+                        "Composer\\Config::disableProcessTimeout",
+                        "@composer run build",
+                        "@php vendor/bin/testbench serve"
+                    ],
+                    "analyse": [
+                        "vendor/bin/phpstan analyse"
+                    ],
+                    "test": [
+                        "vendor/bin/pest"
+                    ],
+                    "test-coverage": [
+                        "vendor/bin/pest --coverage"
+                    ],
+                    "format": [
+                        "vendor/bin/pint"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Dmytro Seredinov",
+                        "email": "dmytro.seredinov@gmail.com",
+                        "role": "Developer"
+                    }
+                ],
+                "description": "TDS Module Foundation",
+                "homepage": "https://github.com/g12com/tds-module",
+                "keywords": [
+                    "G12Com",
+                    "laravel",
+                    "tds-module"
+                ]
+            },
+            {
+                "name": "g12com/tds-module",
+                "version": "1.0.3",
+                "version_normalized": "1.0.3.0",
+                "source": {
+                    "type": "git",
+                    "url": "http://git.at.home/G12/tds-module.git",
+                    "reference": "cdcba868c945e6a737968ea65807088df9b2cd7d"
+                },
+                "require": {
+                    "illuminate/contracts": "^10.0",
+                    "lorisleiva/laravel-actions": "^2.7",
+                    "lorisleiva/lody": "^0.4.0",
+                    "php": "^8.2",
+                    "spatie/laravel-data": "^3.11",
+                    "spatie/laravel-package-tools": "^1.14.0"
+                },
+                "require-dev": {
+                    "filament/filament": "^3.2",
+                    "laravel/pint": "^1.0",
+                    "livewire/livewire": "^3.4",
+                    "nunomaduro/collision": "^7.8",
+                    "orchestra/testbench": "^8.8",
+                    "pestphp/pest": "^2.20",
+                    "pestphp/pest-plugin-arch": "^2.0",
+                    "pestphp/pest-plugin-laravel": "^2.0"
+                },
+                "time": "2024-02-02T20:12:27+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "G12Com\\Module\\ModuleServiceProvider"
+                        ],
+                        "aliases": {
+                            "Module": "G12Com\\Module\\Facades\\Module"
+                        }
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "G12Com\\Module\\": "src/",
+                        "G12Com\\Module\\Database\\Factories\\": "database/factories/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "G12Com\\Module\\Tests\\": "tests/",
+                        "Workbench\\App\\": "workbench/app/"
+                    }
+                },
+                "scripts": {
+                    "post-autoload-dump": [
+                        "@composer run prepare"
+                    ],
+                    "clear": [
+                        "@php vendor/bin/testbench package:purge-tds-module --ansi"
+                    ],
+                    "prepare": [
+                        "@php vendor/bin/testbench package:discover --ansi"
+                    ],
+                    "build": [
+                        "@composer run prepare",
+                        "@php vendor/bin/testbench workbench:build --ansi"
+                    ],
+                    "start": [
+                        "Composer\\Config::disableProcessTimeout",
+                        "@composer run build",
+                        "@php vendor/bin/testbench serve"
+                    ],
+                    "analyse": [
+                        "vendor/bin/phpstan analyse"
+                    ],
+                    "test": [
+                        "vendor/bin/pest"
+                    ],
+                    "test-coverage": [
+                        "vendor/bin/pest --coverage"
+                    ],
+                    "format": [
+                        "vendor/bin/pint"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Dmytro Seredinov",
+                        "email": "dmytro.seredinov@gmail.com",
+                        "role": "Developer"
+                    }
+                ],
+                "description": "TDS Module Foundation",
+                "homepage": "https://github.com/g12com/tds-module",
+                "keywords": [
+                    "G12Com",
+                    "laravel",
+                    "tds-module"
+                ]
+            },
+            {
+                "name": "g12com/tds-module",
+                "version": "1.0.4",
+                "version_normalized": "1.0.4.0",
+                "source": {
+                    "type": "git",
+                    "url": "http://git.at.home/G12/tds-module.git",
+                    "reference": "2b1b7cb2fa07ef5557d62bb2cbf354aba67e4600"
+                },
+                "require": {
+                    "illuminate/contracts": "^10.0",
+                    "lorisleiva/laravel-actions": "^2.7",
+                    "lorisleiva/lody": "^0.4.0",
+                    "php": "^8.2",
+                    "spatie/laravel-data": "^3.11",
+                    "spatie/laravel-package-tools": "^1.14.0"
+                },
+                "require-dev": {
+                    "filament/filament": "^3.2",
+                    "laravel/pint": "^1.0",
+                    "livewire/livewire": "^3.4",
+                    "nunomaduro/collision": "^7.8",
+                    "orchestra/testbench": "^8.8",
+                    "pestphp/pest": "^2.20",
+                    "pestphp/pest-plugin-arch": "^2.0",
+                    "pestphp/pest-plugin-laravel": "^2.0",
+                    "tenancy/tenancy": "^2.2"
+                },
+                "time": "2024-02-05T18:53:26+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "G12Com\\Module\\ModuleServiceProvider"
+                        ],
+                        "aliases": {
+                            "Module": "G12Com\\Module\\Facades\\Module"
+                        }
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "G12Com\\Module\\": "src/",
+                        "G12Com\\Module\\Database\\Factories\\": "database/factories/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "G12Com\\Module\\Tests\\": "tests/",
+                        "Workbench\\App\\": "workbench/app/"
+                    }
+                },
+                "scripts": {
+                    "post-autoload-dump": [
+                        "@composer run prepare"
+                    ],
+                    "clear": [
+                        "@php vendor/bin/testbench package:purge-tds-module --ansi"
+                    ],
+                    "prepare": [
+                        "@php vendor/bin/testbench package:discover --ansi"
+                    ],
+                    "build": [
+                        "@composer run prepare",
+                        "@php vendor/bin/testbench workbench:build --ansi"
+                    ],
+                    "start": [
+                        "Composer\\Config::disableProcessTimeout",
+                        "@composer run build",
+                        "@php vendor/bin/testbench serve"
+                    ],
+                    "analyse": [
+                        "vendor/bin/phpstan analyse"
+                    ],
+                    "test": [
+                        "vendor/bin/pest"
+                    ],
+                    "test-coverage": [
+                        "vendor/bin/pest --coverage"
+                    ],
+                    "format": [
+                        "vendor/bin/pint"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Dmytro Seredinov",
+                        "email": "dmytro.seredinov@gmail.com",
+                        "role": "Developer"
+                    }
+                ],
+                "description": "TDS Module Foundation",
+                "homepage": "https://github.com/g12com/tds-module",
+                "keywords": [
+                    "G12Com",
+                    "laravel",
+                    "tds-module"
+                ]
+            },
+            {
+                "name": "g12com/tds-module",
+                "version": "1.0.5",
+                "version_normalized": "1.0.5.0",
+                "source": {
+                    "type": "git",
+                    "url": "http://git.at.home/G12/tds-module.git",
+                    "reference": "a0ea2dcd137cbb0c1f93ee7ddd0c70cff22214bb"
+                },
+                "require": {
+                    "illuminate/contracts": "^10.0",
+                    "lorisleiva/laravel-actions": "^2.7",
+                    "lorisleiva/lody": "^0.4.0",
+                    "php": "^8.2",
+                    "spatie/laravel-data": "^3.11",
+                    "spatie/laravel-package-tools": "^1.14.0"
+                },
+                "require-dev": {
+                    "filament/filament": "^3.2",
+                    "laravel/pint": "^1.0",
+                    "livewire/livewire": "^3.4",
+                    "nunomaduro/collision": "^7.8",
+                    "orchestra/testbench": "^8.8",
+                    "pestphp/pest": "^2.20",
+                    "pestphp/pest-plugin-arch": "^2.0",
+                    "pestphp/pest-plugin-laravel": "^2.0",
+                    "tenancy/tenancy": "^2.2"
+                },
+                "time": "2024-02-05T19:01:17+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "G12Com\\Module\\ModuleServiceProvider"
+                        ],
+                        "aliases": {
+                            "Module": "G12Com\\Module\\Facades\\Module"
+                        }
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "G12Com\\Module\\": "src/",
+                        "G12Com\\Module\\Database\\Factories\\": "database/factories/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "G12Com\\Module\\Tests\\": "tests/",
+                        "Workbench\\App\\": "workbench/app/"
+                    }
+                },
+                "scripts": {
+                    "post-autoload-dump": [
+                        "@composer run prepare"
+                    ],
+                    "clear": [
+                        "@php vendor/bin/testbench package:purge-tds-module --ansi"
+                    ],
+                    "prepare": [
+                        "@php vendor/bin/testbench package:discover --ansi"
+                    ],
+                    "build": [
+                        "@composer run prepare",
+                        "@php vendor/bin/testbench workbench:build --ansi"
+                    ],
+                    "start": [
+                        "Composer\\Config::disableProcessTimeout",
+                        "@composer run build",
+                        "@php vendor/bin/testbench serve"
+                    ],
+                    "analyse": [
+                        "vendor/bin/phpstan analyse"
+                    ],
+                    "test": [
+                        "vendor/bin/pest"
+                    ],
+                    "test-coverage": [
+                        "vendor/bin/pest --coverage"
+                    ],
+                    "format": [
+                        "vendor/bin/pint"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Dmytro Seredinov",
+                        "email": "dmytro.seredinov@gmail.com",
+                        "role": "Developer"
+                    }
+                ],
+                "description": "TDS Module Foundation",
+                "homepage": "https://github.com/g12com/tds-module",
+                "keywords": [
+                    "G12Com",
+                    "laravel",
+                    "tds-module"
+                ]
+            },
+            {
+                "name": "g12com/tds-module",
+                "version": "1.0.6",
+                "version_normalized": "1.0.6.0",
+                "source": {
+                    "type": "git",
+                    "url": "http://git.at.home/G12/tds-module.git",
+                    "reference": "40506dce62fbcab49abb571b3bab0bb49315c901"
+                },
+                "require": {
+                    "illuminate/contracts": "^10.0",
+                    "lorisleiva/laravel-actions": "^2.7",
+                    "lorisleiva/lody": "^0.4.0",
+                    "php": "^8.2",
+                    "spatie/laravel-data": "^3.11",
+                    "spatie/laravel-package-tools": "^1.14.0"
+                },
+                "require-dev": {
+                    "filament/filament": "^3.2",
+                    "laravel/pint": "^1.0",
+                    "livewire/livewire": "^3.4",
+                    "nunomaduro/collision": "^7.8",
+                    "orchestra/testbench": "^8.8",
+                    "pestphp/pest": "^2.20",
+                    "pestphp/pest-plugin-arch": "^2.0",
+                    "pestphp/pest-plugin-laravel": "^2.0",
+                    "tenancy/tenancy": "^2.2"
+                },
+                "time": "2024-02-05T19:13:43+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "G12Com\\Module\\ModuleServiceProvider"
+                        ],
+                        "aliases": {
+                            "Module": "G12Com\\Module\\Facades\\Module"
+                        }
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "G12Com\\Module\\": "src/",
+                        "G12Com\\Module\\Database\\Factories\\": "database/factories/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "G12Com\\Module\\Tests\\": "tests/",
+                        "Workbench\\App\\": "workbench/app/"
+                    }
+                },
+                "scripts": {
+                    "post-autoload-dump": [
+                        "@composer run prepare"
+                    ],
+                    "clear": [
+                        "@php vendor/bin/testbench package:purge-tds-module --ansi"
+                    ],
+                    "prepare": [
+                        "@php vendor/bin/testbench package:discover --ansi"
+                    ],
+                    "build": [
+                        "@composer run prepare",
+                        "@php vendor/bin/testbench workbench:build --ansi"
+                    ],
+                    "start": [
+                        "Composer\\Config::disableProcessTimeout",
+                        "@composer run build",
+                        "@php vendor/bin/testbench serve"
+                    ],
+                    "analyse": [
+                        "vendor/bin/phpstan analyse"
+                    ],
+                    "test": [
+                        "vendor/bin/pest"
+                    ],
+                    "test-coverage": [
+                        "vendor/bin/pest --coverage"
+                    ],
+                    "format": [
+                        "vendor/bin/pint"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Dmytro Seredinov",
+                        "email": "dmytro.seredinov@gmail.com",
+                        "role": "Developer"
+                    }
+                ],
+                "description": "TDS Module Foundation",
+                "homepage": "https://github.com/g12com/tds-module",
+                "keywords": [
+                    "G12Com",
+                    "laravel",
+                    "tds-module"
+                ]
+            },
+            {
+                "name": "g12com/tds-module",
+                "version": "1.0.7",
+                "version_normalized": "1.0.7.0",
+                "source": {
+                    "type": "git",
+                    "url": "http://git.at.home/G12/tds-module.git",
+                    "reference": "7bd4a59859dfc0251265389c84a3bd3bec1b6f9f"
+                },
+                "require": {
+                    "illuminate/contracts": "^10.0",
+                    "lorisleiva/laravel-actions": "^2.7",
+                    "lorisleiva/lody": "^0.4.0",
+                    "php": "^8.2",
+                    "spatie/laravel-data": "^3.11",
+                    "spatie/laravel-package-tools": "^1.14.0"
+                },
+                "require-dev": {
+                    "filament/filament": "^3.2",
+                    "laravel/pint": "^1.0",
+                    "livewire/livewire": "^3.4",
+                    "nunomaduro/collision": "^7.8",
+                    "orchestra/testbench": "^8.8",
+                    "pestphp/pest": "^2.20",
+                    "pestphp/pest-plugin-arch": "^2.0",
+                    "pestphp/pest-plugin-laravel": "^2.0",
+                    "tenancy/tenancy": "^2.2"
+                },
+                "time": "2024-02-05T19:18:45+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "G12Com\\Module\\ModuleServiceProvider"
+                        ],
+                        "aliases": {
+                            "Module": "G12Com\\Module\\Facades\\Module"
+                        }
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "G12Com\\Module\\": "src/",
+                        "G12Com\\Module\\Database\\Factories\\": "database/factories/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "G12Com\\Module\\Tests\\": "tests/",
+                        "Workbench\\App\\": "workbench/app/"
+                    }
+                },
+                "scripts": {
+                    "post-autoload-dump": [
+                        "@composer run prepare"
+                    ],
+                    "clear": [
+                        "@php vendor/bin/testbench package:purge-tds-module --ansi"
+                    ],
+                    "prepare": [
+                        "@php vendor/bin/testbench package:discover --ansi"
+                    ],
+                    "build": [
+                        "@composer run prepare",
+                        "@php vendor/bin/testbench workbench:build --ansi"
+                    ],
+                    "start": [
+                        "Composer\\Config::disableProcessTimeout",
+                        "@composer run build",
+                        "@php vendor/bin/testbench serve"
+                    ],
+                    "analyse": [
+                        "vendor/bin/phpstan analyse"
+                    ],
+                    "test": [
+                        "vendor/bin/pest"
+                    ],
+                    "test-coverage": [
+                        "vendor/bin/pest --coverage"
+                    ],
+                    "format": [
+                        "vendor/bin/pint"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Dmytro Seredinov",
+                        "email": "dmytro.seredinov@gmail.com",
+                        "role": "Developer"
+                    }
+                ],
+                "description": "TDS Module Foundation",
+                "homepage": "https://github.com/g12com/tds-module",
+                "keywords": [
+                    "G12Com",
+                    "laravel",
+                    "tds-module"
+                ]
+            },
+            {
+                "name": "g12com/tds-module",
+                "version": "1.0.8",
+                "version_normalized": "1.0.8.0",
+                "source": {
+                    "type": "git",
+                    "url": "http://git.at.home/G12/tds-module.git",
+                    "reference": "7825812ce883d76b73b296ae0e2ac4a115639506"
+                },
+                "require": {
+                    "archtechx/enums": "^1.0",
+                    "illuminate/contracts": "^10.0",
+                    "lorisleiva/laravel-actions": "^2.7",
+                    "lorisleiva/lody": "^0.4.0",
+                    "php": "^8.2",
+                    "spatie/laravel-data": "^3.11",
+                    "spatie/laravel-package-tools": "^1.14.0"
+                },
+                "require-dev": {
+                    "filament/filament": "^3.2",
+                    "laravel/pint": "^1.0",
+                    "livewire/livewire": "^3.4",
+                    "nunomaduro/collision": "^7.8",
+                    "orchestra/testbench": "^8.8",
+                    "pestphp/pest": "^2.20",
+                    "pestphp/pest-plugin-arch": "^2.0",
+                    "pestphp/pest-plugin-laravel": "^2.0",
+                    "tenancy/tenancy": "^2.2"
+                },
+                "time": "2024-02-08T17:57:32+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "G12Com\\Module\\ModuleServiceProvider"
+                        ],
+                        "aliases": {
+                            "Module": "G12Com\\Module\\Facades\\Module"
+                        }
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "G12Com\\Module\\": "src/",
+                        "G12Com\\Module\\Database\\Factories\\": "database/factories/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "G12Com\\Module\\Tests\\": "tests/",
+                        "Workbench\\App\\": "workbench/app/"
+                    }
+                },
+                "scripts": {
+                    "post-autoload-dump": [
+                        "@composer run prepare"
+                    ],
+                    "clear": [
+                        "@php vendor/bin/testbench package:purge-tds-module --ansi"
+                    ],
+                    "prepare": [
+                        "@php vendor/bin/testbench package:discover --ansi"
+                    ],
+                    "build": [
+                        "@composer run prepare",
+                        "@php vendor/bin/testbench workbench:build --ansi"
+                    ],
+                    "start": [
+                        "Composer\\Config::disableProcessTimeout",
+                        "@composer run build",
+                        "@php vendor/bin/testbench serve"
+                    ],
+                    "analyse": [
+                        "vendor/bin/phpstan analyse"
+                    ],
+                    "test": [
+                        "vendor/bin/pest"
+                    ],
+                    "test-coverage": [
+                        "vendor/bin/pest --coverage"
+                    ],
+                    "format": [
+                        "vendor/bin/pint"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Dmytro Seredinov",
+                        "email": "dmytro.seredinov@gmail.com",
+                        "role": "Developer"
+                    }
+                ],
+                "description": "TDS Module Foundation",
+                "homepage": "https://github.com/g12com/tds-module",
+                "keywords": [
+                    "G12Com",
+                    "laravel",
+                    "tds-module"
+                ]
+            },
+            {
+                "name": "g12com/tds-module",
+                "version": "1.0.9",
+                "version_normalized": "1.0.9.0",
+                "source": {
+                    "type": "git",
+                    "url": "http://git.at.home/G12/tds-module.git",
+                    "reference": "af3578db445608ab7c54dc489897cbacf368086a"
+                },
+                "require": {
+                    "archtechx/enums": "^1.0",
+                    "illuminate/contracts": "^10.0",
+                    "lorisleiva/laravel-actions": "^2.7",
+                    "lorisleiva/lody": "^0.4.0",
+                    "php": "^8.2",
+                    "spatie/laravel-data": "^3.11",
+                    "spatie/laravel-package-tools": "^1.14.0"
+                },
+                "require-dev": {
+                    "filament/filament": "^3.2",
+                    "laravel/pint": "^1.0",
+                    "livewire/livewire": "^3.4",
+                    "nunomaduro/collision": "^7.8",
+                    "orchestra/testbench": "^8.8",
+                    "pestphp/pest": "^2.20",
+                    "pestphp/pest-plugin-arch": "^2.0",
+                    "pestphp/pest-plugin-laravel": "^2.0",
+                    "tenancy/tenancy": "^2.2"
+                },
+                "time": "2024-02-08T18:00:08+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "G12Com\\Module\\ModuleServiceProvider"
+                        ],
+                        "aliases": {
+                            "Module": "G12Com\\Module\\Facades\\Module"
+                        }
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "G12Com\\Module\\": "src/",
+                        "G12Com\\Module\\Database\\Factories\\": "database/factories/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "G12Com\\Module\\Tests\\": "tests/",
+                        "Workbench\\App\\": "workbench/app/"
+                    }
+                },
+                "scripts": {
+                    "post-autoload-dump": [
+                        "@composer run prepare"
+                    ],
+                    "clear": [
+                        "@php vendor/bin/testbench package:purge-tds-module --ansi"
+                    ],
+                    "prepare": [
+                        "@php vendor/bin/testbench package:discover --ansi"
+                    ],
+                    "build": [
+                        "@composer run prepare",
+                        "@php vendor/bin/testbench workbench:build --ansi"
+                    ],
+                    "start": [
+                        "Composer\\Config::disableProcessTimeout",
+                        "@composer run build",
+                        "@php vendor/bin/testbench serve"
+                    ],
+                    "analyse": [
+                        "vendor/bin/phpstan analyse"
+                    ],
+                    "test": [
+                        "vendor/bin/pest"
+                    ],
+                    "test-coverage": [
+                        "vendor/bin/pest --coverage"
+                    ],
+                    "format": [
+                        "vendor/bin/pint"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Dmytro Seredinov",
+                        "email": "dmytro.seredinov@gmail.com",
+                        "role": "Developer"
+                    }
+                ],
+                "description": "TDS Module Foundation",
+                "homepage": "https://github.com/g12com/tds-module",
+                "keywords": [
+                    "G12Com",
+                    "laravel",
+                    "tds-module"
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "packages": [],
+    "includes": {
+        "include/all$22e4917b86b7fcdf6fc1319830d887244562d71f.json": {
+            "sha1": "22e4917b86b7fcdf6fc1319830d887244562d71f"
+        }
+    },
+    "metadata-url": "/p2/%package%.json",
+    "available-packages": [
+        "g12com/composer-installer-plugin",
+        "g12com/core-plugin",
+        "g12com/foundation-plugin",
+        "g12com/tds-module"
+    ]
+}

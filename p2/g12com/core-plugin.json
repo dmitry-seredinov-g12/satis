@@ -1,0 +1,411 @@
+{
+    "packages": {
+        "g12com/core-plugin": [
+            {
+                "name": "g12com/core-plugin",
+                "version": "1.0.0",
+                "version_normalized": "1.0.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "http://git.at.home/G12/core-plugin.git",
+                    "reference": "6f10e60e04c896f92d22b9e9087f4e0ef8935a0b"
+                },
+                "require": {
+                    "ankurk91/laravel-eloquent-relationships": "^2.0",
+                    "archtechx/enums": "^1.0",
+                    "illuminate/contracts": "^10.0",
+                    "php": "^8.1",
+                    "spatie/laravel-package-tools": "^1.14.0",
+                    "tightenco/parental": "^1.3"
+                },
+                "require-dev": {
+                    "laravel/pint": "^1.0",
+                    "nunomaduro/collision": "^7.8",
+                    "orchestra/testbench": "^8.8",
+                    "pestphp/pest": "^2.20",
+                    "pestphp/pest-plugin-arch": "^2.5",
+                    "pestphp/pest-plugin-laravel": "^2.0",
+                    "stancl/tenancy": "^3.7"
+                },
+                "time": "2024-02-07T22:53:58+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "G12Com\\Core\\CoreServiceProvider"
+                        ],
+                        "aliases": {
+                            "Core": "G12Com\\Core\\Facades\\Core"
+                        }
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "G12Com\\Core\\": "src/",
+                        "G12Com\\Core\\Database\\Factories\\": "database/factories/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "G12Com\\Core\\Tests\\": "tests/",
+                        "Workbench\\App\\": "workbench/app/"
+                    }
+                },
+                "scripts": {
+                    "post-autoload-dump": [
+                        "@composer run prepare"
+                    ],
+                    "clear": [
+                        "@php vendor/bin/testbench package:purge-core-plugin --ansi"
+                    ],
+                    "prepare": [
+                        "@php vendor/bin/testbench package:discover --ansi"
+                    ],
+                    "build": [
+                        "@composer run prepare",
+                        "@php vendor/bin/testbench workbench:build --ansi"
+                    ],
+                    "start": [
+                        "Composer\\Config::disableProcessTimeout",
+                        "@composer run build",
+                        "@php vendor/bin/testbench serve"
+                    ],
+                    "analyse": [
+                        "vendor/bin/phpstan analyse"
+                    ],
+                    "test": [
+                        "vendor/bin/pest"
+                    ],
+                    "test-coverage": [
+                        "vendor/bin/pest --coverage"
+                    ],
+                    "format": [
+                        "vendor/bin/pint"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Dmytro Seredinov",
+                        "email": "dmytro.seredinov@gmail.com",
+                        "role": "Developer"
+                    }
+                ],
+                "description": "Core Plugin for TDS Platform",
+                "homepage": "https://github.com/g12com/core-plugin",
+                "keywords": [
+                    "G12Com",
+                    "core-plugin",
+                    "laravel"
+                ]
+            },
+            {
+                "name": "g12com/core-plugin",
+                "version": "1.0.1",
+                "version_normalized": "1.0.1.0",
+                "source": {
+                    "type": "git",
+                    "url": "http://git.at.home/G12/core-plugin.git",
+                    "reference": "40f8e9c6ce21597080d2e516fe5b7484a4ee4ba9"
+                },
+                "require": {
+                    "ankurk91/laravel-eloquent-relationships": "^2.0",
+                    "archtechx/enums": "^1.0",
+                    "illuminate/contracts": "^10.0",
+                    "php": "^8.1",
+                    "spatie/laravel-package-tools": "^1.14.0",
+                    "tightenco/parental": "^1.3"
+                },
+                "require-dev": {
+                    "laravel/pint": "^1.0",
+                    "nunomaduro/collision": "^7.8",
+                    "orchestra/testbench": "^8.8",
+                    "pestphp/pest": "^2.20",
+                    "pestphp/pest-plugin-arch": "^2.5",
+                    "pestphp/pest-plugin-laravel": "^2.0",
+                    "stancl/tenancy": "^3.7"
+                },
+                "time": "2024-02-08T17:48:10+00:00",
+                "type": "tds-plugin",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "G12Com\\Core\\CoreServiceProvider"
+                        ],
+                        "aliases": {
+                            "Core": "G12Com\\Core\\Facades\\Core"
+                        }
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "G12Com\\Core\\": "src/",
+                        "G12Com\\Core\\Database\\Factories\\": "database/factories/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "G12Com\\Core\\Tests\\": "tests/",
+                        "Workbench\\App\\": "workbench/app/"
+                    }
+                },
+                "scripts": {
+                    "post-autoload-dump": [
+                        "@composer run prepare"
+                    ],
+                    "clear": [
+                        "@php vendor/bin/testbench package:purge-core-plugin --ansi"
+                    ],
+                    "prepare": [
+                        "@php vendor/bin/testbench package:discover --ansi"
+                    ],
+                    "build": [
+                        "@composer run prepare",
+                        "@php vendor/bin/testbench workbench:build --ansi"
+                    ],
+                    "start": [
+                        "Composer\\Config::disableProcessTimeout",
+                        "@composer run build",
+                        "@php vendor/bin/testbench serve"
+                    ],
+                    "analyse": [
+                        "vendor/bin/phpstan analyse"
+                    ],
+                    "test": [
+                        "vendor/bin/pest"
+                    ],
+                    "test-coverage": [
+                        "vendor/bin/pest --coverage"
+                    ],
+                    "format": [
+                        "vendor/bin/pint"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Dmytro Seredinov",
+                        "email": "dmytro.seredinov@gmail.com",
+                        "role": "Developer"
+                    }
+                ],
+                "description": "Core Plugin for TDS Platform",
+                "homepage": "https://github.com/g12com/core-plugin",
+                "keywords": [
+                    "G12Com",
+                    "core-plugin",
+                    "laravel"
+                ]
+            },
+            {
+                "name": "g12com/core-plugin",
+                "version": "1.0.2",
+                "version_normalized": "1.0.2.0",
+                "source": {
+                    "type": "git",
+                    "url": "http://git.at.home/G12/core-plugin.git",
+                    "reference": "7fb60c1ba6a91a82b5967e858e57d9f29051bdef"
+                },
+                "require": {
+                    "ankurk91/laravel-eloquent-relationships": "^2.0",
+                    "archtechx/enums": "^1.0",
+                    "illuminate/contracts": "^10.0",
+                    "php": "^8.1",
+                    "spatie/laravel-data": "^3.11",
+                    "spatie/laravel-package-tools": "^1.14.0",
+                    "tightenco/parental": "^1.3"
+                },
+                "require-dev": {
+                    "laravel/pint": "^1.0",
+                    "nunomaduro/collision": "^7.8",
+                    "orchestra/testbench": "^8.8",
+                    "pestphp/pest": "^2.20",
+                    "pestphp/pest-plugin-arch": "^2.5",
+                    "pestphp/pest-plugin-laravel": "^2.0",
+                    "stancl/tenancy": "^3.7"
+                },
+                "time": "2024-02-08T21:10:41+00:00",
+                "type": "tds-plugin",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "G12Com\\Core\\CoreServiceProvider"
+                        ],
+                        "aliases": {
+                            "Core": "G12Com\\Core\\Facades\\Core"
+                        }
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "G12Com\\Core\\": "src/",
+                        "G12Com\\Core\\Database\\Factories\\": "database/factories/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "G12Com\\Core\\Tests\\": "tests/",
+                        "Workbench\\App\\": "workbench/app/"
+                    }
+                },
+                "scripts": {
+                    "post-autoload-dump": [
+                        "@composer run prepare"
+                    ],
+                    "clear": [
+                        "@php vendor/bin/testbench package:purge-core-plugin --ansi"
+                    ],
+                    "prepare": [
+                        "@php vendor/bin/testbench package:discover --ansi"
+                    ],
+                    "build": [
+                        "@composer run prepare",
+                        "@php vendor/bin/testbench workbench:build --ansi"
+                    ],
+                    "start": [
+                        "Composer\\Config::disableProcessTimeout",
+                        "@composer run build",
+                        "@php vendor/bin/testbench serve"
+                    ],
+                    "analyse": [
+                        "vendor/bin/phpstan analyse"
+                    ],
+                    "test": [
+                        "vendor/bin/pest"
+                    ],
+                    "test-coverage": [
+                        "vendor/bin/pest --coverage"
+                    ],
+                    "format": [
+                        "vendor/bin/pint"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Dmytro Seredinov",
+                        "email": "dmytro.seredinov@gmail.com",
+                        "role": "Developer"
+                    }
+                ],
+                "description": "Core Plugin for TDS Platform",
+                "homepage": "https://github.com/g12com/core-plugin",
+                "keywords": [
+                    "G12Com",
+                    "core-plugin",
+                    "laravel"
+                ]
+            },
+            {
+                "name": "g12com/core-plugin",
+                "version": "1.0.3",
+                "version_normalized": "1.0.3.0",
+                "source": {
+                    "type": "git",
+                    "url": "http://git.at.home/G12/core-plugin.git",
+                    "reference": "476215ecd2e23c9afe4b8f1de93cc068b84099f9"
+                },
+                "require": {
+                    "ankurk91/laravel-eloquent-relationships": "^2.0",
+                    "archtechx/enums": "^1.0",
+                    "illuminate/contracts": "^10.0",
+                    "php": "^8.1",
+                    "spatie/laravel-data": "^3.11",
+                    "spatie/laravel-package-tools": "^1.14.0",
+                    "tightenco/parental": "^1.3"
+                },
+                "require-dev": {
+                    "laravel/pint": "^1.0",
+                    "laravel/sanctum": "^3.3",
+                    "livewire/livewire": "^3.4",
+                    "nunomaduro/collision": "^7.8",
+                    "orchestra/testbench": "^8.8",
+                    "pestphp/pest": "^2.20",
+                    "pestphp/pest-plugin-arch": "^2.5",
+                    "pestphp/pest-plugin-laravel": "^2.0",
+                    "spatie/laravel-model-states": "^2.6",
+                    "stancl/tenancy": "^3.7"
+                },
+                "time": "2024-02-08T21:24:11+00:00",
+                "type": "tds-plugin",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "G12Com\\Core\\CoreServiceProvider"
+                        ],
+                        "aliases": {
+                            "Core": "G12Com\\Core\\Facades\\Core"
+                        }
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "G12Com\\Core\\": "src/",
+                        "G12Com\\Core\\Database\\Factories\\": "database/factories/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "G12Com\\Core\\Tests\\": "tests/",
+                        "Workbench\\App\\": "workbench/app/"
+                    }
+                },
+                "scripts": {
+                    "post-autoload-dump": [
+                        "@composer run prepare"
+                    ],
+                    "clear": [
+                        "@php vendor/bin/testbench package:purge-core-plugin --ansi"
+                    ],
+                    "prepare": [
+                        "@php vendor/bin/testbench package:discover --ansi"
+                    ],
+                    "build": [
+                        "@composer run prepare",
+                        "@php vendor/bin/testbench workbench:build --ansi"
+                    ],
+                    "start": [
+                        "Composer\\Config::disableProcessTimeout",
+                        "@composer run build",
+                        "@php vendor/bin/testbench serve"
+                    ],
+                    "analyse": [
+                        "vendor/bin/phpstan analyse"
+                    ],
+                    "test": [
+                        "vendor/bin/pest"
+                    ],
+                    "test-coverage": [
+                        "vendor/bin/pest --coverage"
+                    ],
+                    "format": [
+                        "vendor/bin/pint"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Dmytro Seredinov",
+                        "email": "dmytro.seredinov@gmail.com",
+                        "role": "Developer"
+                    }
+                ],
+                "description": "Core Plugin for TDS Platform",
+                "homepage": "https://github.com/g12com/core-plugin",
+                "keywords": [
+                    "G12Com",
+                    "core-plugin",
+                    "laravel"
+                ]
+            }
+        ]
+    }
+}
