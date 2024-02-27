@@ -7,8 +7,14 @@
                 "version_normalized": "1.0.0.0",
                 "source": {
                     "type": "git",
-                    "url": "http://git.at.home/G12/composer-installer-plugin.git",
+                    "url": "git@github.com:dmitry-seredinov-g12/composer-installer-plugin.git",
                     "reference": "a065c98e1365b70931a958c85b8ab69540cc2cbc"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/dmitry-seredinov-g12/composer-installer-plugin/zipball/a065c98e1365b70931a958c85b8ab69540cc2cbc",
+                    "reference": "a065c98e1365b70931a958c85b8ab69540cc2cbc",
+                    "shasum": ""
                 },
                 "require": {
                     "composer-plugin-api": "^2.3",
@@ -41,7 +47,11 @@
                         "email": "dmytro.seredinov@gmail.com"
                     }
                 ],
-                "description": "Custom installer for TDS Portal Modules and Plugins"
+                "description": "Custom installer for TDS Portal Modules and Plugins",
+                "support": {
+                    "source": "https://github.com/dmitry-seredinov-g12/composer-installer-plugin/tree/1.0.0",
+                    "issues": "https://github.com/dmitry-seredinov-g12/composer-installer-plugin/issues"
+                }
             }
         ]
     }

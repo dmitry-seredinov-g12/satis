@@ -7,8 +7,14 @@
                 "version_normalized": "1.0.0.0",
                 "source": {
                     "type": "git",
-                    "url": "http://git.at.home/G12/tds-module.git",
+                    "url": "git@github.com:dmitry-seredinov-g12/tds-module.git",
                     "reference": "d9a089a8e04c089ced678fa0445b7131b5f0428f"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/dmitry-seredinov-g12/tds-module/zipball/d9a089a8e04c089ced678fa0445b7131b5f0428f",
+                    "reference": "d9a089a8e04c089ced678fa0445b7131b5f0428f",
+                    "shasum": ""
                 },
                 "require": {
                     "illuminate/contracts": "^10.0",
@@ -99,6 +105,16 @@
                     "G12Com",
                     "laravel",
                     "tds-module"
+                ],
+                "support": {
+                    "source": "https://github.com/dmitry-seredinov-g12/tds-module/tree/1.0.0",
+                    "issues": "https://github.com/dmitry-seredinov-g12/tds-module/issues"
+                },
+                "funding": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/G12Com"
+                    }
                 ]
             },
             {
@@ -107,8 +123,14 @@
                 "version_normalized": "1.0.1.0",
                 "source": {
                     "type": "git",
-                    "url": "http://git.at.home/G12/tds-module.git",
+                    "url": "git@github.com:dmitry-seredinov-g12/tds-module.git",
                     "reference": "90bfe1e5d8fde048686fb8aaaf6344b71173b6c8"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/dmitry-seredinov-g12/tds-module/zipball/90bfe1e5d8fde048686fb8aaaf6344b71173b6c8",
+                    "reference": "90bfe1e5d8fde048686fb8aaaf6344b71173b6c8",
+                    "shasum": ""
                 },
                 "require": {
                     "illuminate/contracts": "^10.0",
@@ -199,6 +221,16 @@
                     "G12Com",
                     "laravel",
                     "tds-module"
+                ],
+                "support": {
+                    "source": "https://github.com/dmitry-seredinov-g12/tds-module/tree/1.0.1",
+                    "issues": "https://github.com/dmitry-seredinov-g12/tds-module/issues"
+                },
+                "funding": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/G12Com"
+                    }
                 ]
             },
             {
@@ -207,8 +239,14 @@
                 "version_normalized": "1.0.10.0",
                 "source": {
                     "type": "git",
-                    "url": "http://git.at.home/G12/tds-module.git",
+                    "url": "git@github.com:dmitry-seredinov-g12/tds-module.git",
                     "reference": "8725449c6e33b5f9f55bc3a1c5d1feb23ae95c1b"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/dmitry-seredinov-g12/tds-module/zipball/8725449c6e33b5f9f55bc3a1c5d1feb23ae95c1b",
+                    "reference": "8725449c6e33b5f9f55bc3a1c5d1feb23ae95c1b",
+                    "shasum": ""
                 },
                 "require": {
                     "archtechx/enums": "^1.0",
@@ -302,6 +340,16 @@
                     "G12Com",
                     "laravel",
                     "tds-module"
+                ],
+                "support": {
+                    "source": "https://github.com/dmitry-seredinov-g12/tds-module/tree/1.0.10",
+                    "issues": "https://github.com/dmitry-seredinov-g12/tds-module/issues"
+                },
+                "funding": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/G12Com"
+                    }
                 ]
             },
             {
@@ -310,8 +358,14 @@
                 "version_normalized": "1.0.11.0",
                 "source": {
                     "type": "git",
-                    "url": "http://git.at.home/G12/tds-module.git",
+                    "url": "git@github.com:dmitry-seredinov-g12/tds-module.git",
                     "reference": "c13a60e2c3b435f66501d6126a9c143a958e5ad1"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/dmitry-seredinov-g12/tds-module/zipball/c13a60e2c3b435f66501d6126a9c143a958e5ad1",
+                    "reference": "c13a60e2c3b435f66501d6126a9c143a958e5ad1",
+                    "shasum": ""
                 },
                 "require": {
                     "archtechx/enums": "^1.0",
@@ -405,6 +459,16 @@
                     "G12Com",
                     "laravel",
                     "tds-module"
+                ],
+                "support": {
+                    "source": "https://github.com/dmitry-seredinov-g12/tds-module/tree/1.0.11",
+                    "issues": "https://github.com/dmitry-seredinov-g12/tds-module/issues"
+                },
+                "funding": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/G12Com"
+                    }
                 ]
             },
             {
@@ -413,8 +477,14 @@
                 "version_normalized": "1.0.12.0",
                 "source": {
                     "type": "git",
-                    "url": "http://git.at.home/G12/tds-module.git",
+                    "url": "git@github.com:dmitry-seredinov-g12/tds-module.git",
                     "reference": "abe692b86e096a9ed2859cd3f5378fd1238b2040"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/dmitry-seredinov-g12/tds-module/zipball/abe692b86e096a9ed2859cd3f5378fd1238b2040",
+                    "reference": "abe692b86e096a9ed2859cd3f5378fd1238b2040",
+                    "shasum": ""
                 },
                 "require": {
                     "archtechx/enums": "^1.0",
@@ -508,6 +578,16 @@
                     "G12Com",
                     "laravel",
                     "tds-module"
+                ],
+                "support": {
+                    "source": "https://github.com/dmitry-seredinov-g12/tds-module/tree/1.0.12",
+                    "issues": "https://github.com/dmitry-seredinov-g12/tds-module/issues"
+                },
+                "funding": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/G12Com"
+                    }
                 ]
             },
             {
@@ -516,8 +596,14 @@
                 "version_normalized": "1.0.13.0",
                 "source": {
                     "type": "git",
-                    "url": "http://git.at.home/G12/tds-module.git",
+                    "url": "git@github.com:dmitry-seredinov-g12/tds-module.git",
                     "reference": "e92ec5efbc52db2abdae07ab75b8f61d265c3531"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/dmitry-seredinov-g12/tds-module/zipball/e92ec5efbc52db2abdae07ab75b8f61d265c3531",
+                    "reference": "e92ec5efbc52db2abdae07ab75b8f61d265c3531",
+                    "shasum": ""
                 },
                 "require": {
                     "archtechx/enums": "^1.0",
@@ -611,6 +697,16 @@
                     "G12Com",
                     "laravel",
                     "tds-module"
+                ],
+                "support": {
+                    "source": "https://github.com/dmitry-seredinov-g12/tds-module/tree/1.0.13",
+                    "issues": "https://github.com/dmitry-seredinov-g12/tds-module/issues"
+                },
+                "funding": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/G12Com"
+                    }
                 ]
             },
             {
@@ -619,8 +715,14 @@
                 "version_normalized": "1.0.14.0",
                 "source": {
                     "type": "git",
-                    "url": "http://git.at.home/G12/tds-module.git",
+                    "url": "git@github.com:dmitry-seredinov-g12/tds-module.git",
                     "reference": "45d020aff5210c065bbedadf67c91a26869e80d4"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/dmitry-seredinov-g12/tds-module/zipball/45d020aff5210c065bbedadf67c91a26869e80d4",
+                    "reference": "45d020aff5210c065bbedadf67c91a26869e80d4",
+                    "shasum": ""
                 },
                 "require": {
                     "archtechx/enums": "^1.0",
@@ -714,6 +816,16 @@
                     "G12Com",
                     "laravel",
                     "tds-module"
+                ],
+                "support": {
+                    "source": "https://github.com/dmitry-seredinov-g12/tds-module/tree/1.0.14",
+                    "issues": "https://github.com/dmitry-seredinov-g12/tds-module/issues"
+                },
+                "funding": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/G12Com"
+                    }
                 ]
             },
             {
@@ -722,8 +834,14 @@
                 "version_normalized": "1.0.15.0",
                 "source": {
                     "type": "git",
-                    "url": "http://git.at.home/G12/tds-module.git",
+                    "url": "git@github.com:dmitry-seredinov-g12/tds-module.git",
                     "reference": "cb5d21c3dff3004a7be509a85ccd75bdc6461642"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/dmitry-seredinov-g12/tds-module/zipball/cb5d21c3dff3004a7be509a85ccd75bdc6461642",
+                    "reference": "cb5d21c3dff3004a7be509a85ccd75bdc6461642",
+                    "shasum": ""
                 },
                 "require": {
                     "archtechx/enums": "^1.0",
@@ -817,6 +935,16 @@
                     "G12Com",
                     "laravel",
                     "tds-module"
+                ],
+                "support": {
+                    "source": "https://github.com/dmitry-seredinov-g12/tds-module/tree/1.0.15",
+                    "issues": "https://github.com/dmitry-seredinov-g12/tds-module/issues"
+                },
+                "funding": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/G12Com"
+                    }
                 ]
             },
             {
@@ -825,8 +953,14 @@
                 "version_normalized": "1.0.16.0",
                 "source": {
                     "type": "git",
-                    "url": "http://git.at.home/G12/tds-module.git",
+                    "url": "git@github.com:dmitry-seredinov-g12/tds-module.git",
                     "reference": "ef14164fdb7c30b997fa2fe75ff1e869ba0244fc"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/dmitry-seredinov-g12/tds-module/zipball/ef14164fdb7c30b997fa2fe75ff1e869ba0244fc",
+                    "reference": "ef14164fdb7c30b997fa2fe75ff1e869ba0244fc",
+                    "shasum": ""
                 },
                 "require": {
                     "archtechx/enums": "^1.0",
@@ -920,6 +1054,16 @@
                     "G12Com",
                     "laravel",
                     "tds-module"
+                ],
+                "support": {
+                    "source": "https://github.com/dmitry-seredinov-g12/tds-module/tree/1.0.16",
+                    "issues": "https://github.com/dmitry-seredinov-g12/tds-module/issues"
+                },
+                "funding": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/G12Com"
+                    }
                 ]
             },
             {
@@ -928,8 +1072,14 @@
                 "version_normalized": "1.0.17.0",
                 "source": {
                     "type": "git",
-                    "url": "http://git.at.home/G12/tds-module.git",
+                    "url": "git@github.com:dmitry-seredinov-g12/tds-module.git",
                     "reference": "aa98d515fb6853d3279dce9e2e2a7f44ccef6ae6"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/dmitry-seredinov-g12/tds-module/zipball/aa98d515fb6853d3279dce9e2e2a7f44ccef6ae6",
+                    "reference": "aa98d515fb6853d3279dce9e2e2a7f44ccef6ae6",
+                    "shasum": ""
                 },
                 "require": {
                     "archtechx/enums": "^1.0",
@@ -1023,6 +1173,16 @@
                     "G12Com",
                     "laravel",
                     "tds-module"
+                ],
+                "support": {
+                    "source": "https://github.com/dmitry-seredinov-g12/tds-module/tree/1.0.17",
+                    "issues": "https://github.com/dmitry-seredinov-g12/tds-module/issues"
+                },
+                "funding": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/G12Com"
+                    }
                 ]
             },
             {
@@ -1031,8 +1191,14 @@
                 "version_normalized": "1.0.18.0",
                 "source": {
                     "type": "git",
-                    "url": "http://git.at.home/G12/tds-module.git",
+                    "url": "git@github.com:dmitry-seredinov-g12/tds-module.git",
                     "reference": "449f0f3149f4936ae23bf28e9b38d946135e6f0d"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/dmitry-seredinov-g12/tds-module/zipball/449f0f3149f4936ae23bf28e9b38d946135e6f0d",
+                    "reference": "449f0f3149f4936ae23bf28e9b38d946135e6f0d",
+                    "shasum": ""
                 },
                 "require": {
                     "archtechx/enums": "^1.0",
@@ -1126,6 +1292,16 @@
                     "G12Com",
                     "laravel",
                     "tds-module"
+                ],
+                "support": {
+                    "source": "https://github.com/dmitry-seredinov-g12/tds-module/tree/1.0.18",
+                    "issues": "https://github.com/dmitry-seredinov-g12/tds-module/issues"
+                },
+                "funding": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/G12Com"
+                    }
                 ]
             },
             {
@@ -1134,8 +1310,14 @@
                 "version_normalized": "1.0.19.0",
                 "source": {
                     "type": "git",
-                    "url": "http://git.at.home/G12/tds-module.git",
+                    "url": "git@github.com:dmitry-seredinov-g12/tds-module.git",
                     "reference": "7da05e58a9cda853a8928a90747926b8ba33fc83"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/dmitry-seredinov-g12/tds-module/zipball/7da05e58a9cda853a8928a90747926b8ba33fc83",
+                    "reference": "7da05e58a9cda853a8928a90747926b8ba33fc83",
+                    "shasum": ""
                 },
                 "require": {
                     "archtechx/enums": "^1.0",
@@ -1229,6 +1411,16 @@
                     "G12Com",
                     "laravel",
                     "tds-module"
+                ],
+                "support": {
+                    "source": "https://github.com/dmitry-seredinov-g12/tds-module/tree/1.0.19",
+                    "issues": "https://github.com/dmitry-seredinov-g12/tds-module/issues"
+                },
+                "funding": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/G12Com"
+                    }
                 ]
             },
             {
@@ -1237,8 +1429,14 @@
                 "version_normalized": "1.0.2.0",
                 "source": {
                     "type": "git",
-                    "url": "http://git.at.home/G12/tds-module.git",
+                    "url": "git@github.com:dmitry-seredinov-g12/tds-module.git",
                     "reference": "984289a1dbca58978f74842df85b683da78147b8"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/dmitry-seredinov-g12/tds-module/zipball/984289a1dbca58978f74842df85b683da78147b8",
+                    "reference": "984289a1dbca58978f74842df85b683da78147b8",
+                    "shasum": ""
                 },
                 "require": {
                     "illuminate/contracts": "^10.0",
@@ -1329,6 +1527,16 @@
                     "G12Com",
                     "laravel",
                     "tds-module"
+                ],
+                "support": {
+                    "source": "https://github.com/dmitry-seredinov-g12/tds-module/tree/1.0.2",
+                    "issues": "https://github.com/dmitry-seredinov-g12/tds-module/issues"
+                },
+                "funding": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/G12Com"
+                    }
                 ]
             },
             {
@@ -1337,8 +1545,14 @@
                 "version_normalized": "1.0.20.0",
                 "source": {
                     "type": "git",
-                    "url": "http://git.at.home/G12/tds-module.git",
+                    "url": "git@github.com:dmitry-seredinov-g12/tds-module.git",
                     "reference": "1d2b3ba458693a31381fb08f23c788503d63ec40"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/dmitry-seredinov-g12/tds-module/zipball/1d2b3ba458693a31381fb08f23c788503d63ec40",
+                    "reference": "1d2b3ba458693a31381fb08f23c788503d63ec40",
+                    "shasum": ""
                 },
                 "require": {
                     "archtechx/enums": "^1.0",
@@ -1432,6 +1646,16 @@
                     "G12Com",
                     "laravel",
                     "tds-module"
+                ],
+                "support": {
+                    "source": "https://github.com/dmitry-seredinov-g12/tds-module/tree/1.0.20",
+                    "issues": "https://github.com/dmitry-seredinov-g12/tds-module/issues"
+                },
+                "funding": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/G12Com"
+                    }
                 ]
             },
             {
@@ -1440,8 +1664,14 @@
                 "version_normalized": "1.0.21.0",
                 "source": {
                     "type": "git",
-                    "url": "http://git.at.home/G12/tds-module.git",
+                    "url": "git@github.com:dmitry-seredinov-g12/tds-module.git",
                     "reference": "ae8f460a422d733771c87bfa53e09563f1a61ff2"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/dmitry-seredinov-g12/tds-module/zipball/ae8f460a422d733771c87bfa53e09563f1a61ff2",
+                    "reference": "ae8f460a422d733771c87bfa53e09563f1a61ff2",
+                    "shasum": ""
                 },
                 "require": {
                     "archtechx/enums": "^1.0",
@@ -1535,6 +1765,16 @@
                     "G12Com",
                     "laravel",
                     "tds-module"
+                ],
+                "support": {
+                    "source": "https://github.com/dmitry-seredinov-g12/tds-module/tree/1.0.21",
+                    "issues": "https://github.com/dmitry-seredinov-g12/tds-module/issues"
+                },
+                "funding": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/G12Com"
+                    }
                 ]
             },
             {
@@ -1543,8 +1783,14 @@
                 "version_normalized": "1.0.22.0",
                 "source": {
                     "type": "git",
-                    "url": "http://git.at.home/G12/tds-module.git",
+                    "url": "git@github.com:dmitry-seredinov-g12/tds-module.git",
                     "reference": "175af8242fad5b6b8229778cad925ca1c8650f4d"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/dmitry-seredinov-g12/tds-module/zipball/175af8242fad5b6b8229778cad925ca1c8650f4d",
+                    "reference": "175af8242fad5b6b8229778cad925ca1c8650f4d",
+                    "shasum": ""
                 },
                 "require": {
                     "archtechx/enums": "^1.0",
@@ -1638,6 +1884,16 @@
                     "G12Com",
                     "laravel",
                     "tds-module"
+                ],
+                "support": {
+                    "source": "https://github.com/dmitry-seredinov-g12/tds-module/tree/1.0.22",
+                    "issues": "https://github.com/dmitry-seredinov-g12/tds-module/issues"
+                },
+                "funding": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/G12Com"
+                    }
                 ]
             },
             {
@@ -1646,8 +1902,14 @@
                 "version_normalized": "1.0.23.0",
                 "source": {
                     "type": "git",
-                    "url": "http://git.at.home/G12/tds-module.git",
+                    "url": "git@github.com:dmitry-seredinov-g12/tds-module.git",
                     "reference": "9c14c2e9a174250b1ca2a84d4b12e554cf977bcc"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/dmitry-seredinov-g12/tds-module/zipball/9c14c2e9a174250b1ca2a84d4b12e554cf977bcc",
+                    "reference": "9c14c2e9a174250b1ca2a84d4b12e554cf977bcc",
+                    "shasum": ""
                 },
                 "require": {
                     "archtechx/enums": "^1.0",
@@ -1741,6 +2003,16 @@
                     "G12Com",
                     "laravel",
                     "tds-module"
+                ],
+                "support": {
+                    "source": "https://github.com/dmitry-seredinov-g12/tds-module/tree/1.0.23",
+                    "issues": "https://github.com/dmitry-seredinov-g12/tds-module/issues"
+                },
+                "funding": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/G12Com"
+                    }
                 ]
             },
             {
@@ -1749,8 +2021,14 @@
                 "version_normalized": "1.0.24.0",
                 "source": {
                     "type": "git",
-                    "url": "http://git.at.home/G12/tds-module.git",
+                    "url": "git@github.com:dmitry-seredinov-g12/tds-module.git",
                     "reference": "44264d128a6a04eca6f3111cf9f5867885fcda78"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/dmitry-seredinov-g12/tds-module/zipball/44264d128a6a04eca6f3111cf9f5867885fcda78",
+                    "reference": "44264d128a6a04eca6f3111cf9f5867885fcda78",
+                    "shasum": ""
                 },
                 "require": {
                     "archtechx/enums": "^1.0",
@@ -1844,6 +2122,16 @@
                     "G12Com",
                     "laravel",
                     "tds-module"
+                ],
+                "support": {
+                    "source": "https://github.com/dmitry-seredinov-g12/tds-module/tree/1.0.24",
+                    "issues": "https://github.com/dmitry-seredinov-g12/tds-module/issues"
+                },
+                "funding": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/G12Com"
+                    }
                 ]
             },
             {
@@ -1852,8 +2140,14 @@
                 "version_normalized": "1.0.3.0",
                 "source": {
                     "type": "git",
-                    "url": "http://git.at.home/G12/tds-module.git",
+                    "url": "git@github.com:dmitry-seredinov-g12/tds-module.git",
                     "reference": "cdcba868c945e6a737968ea65807088df9b2cd7d"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/dmitry-seredinov-g12/tds-module/zipball/cdcba868c945e6a737968ea65807088df9b2cd7d",
+                    "reference": "cdcba868c945e6a737968ea65807088df9b2cd7d",
+                    "shasum": ""
                 },
                 "require": {
                     "illuminate/contracts": "^10.0",
@@ -1945,6 +2239,16 @@
                     "G12Com",
                     "laravel",
                     "tds-module"
+                ],
+                "support": {
+                    "source": "https://github.com/dmitry-seredinov-g12/tds-module/tree/1.0.3",
+                    "issues": "https://github.com/dmitry-seredinov-g12/tds-module/issues"
+                },
+                "funding": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/G12Com"
+                    }
                 ]
             },
             {
@@ -1953,8 +2257,14 @@
                 "version_normalized": "1.0.4.0",
                 "source": {
                     "type": "git",
-                    "url": "http://git.at.home/G12/tds-module.git",
+                    "url": "git@github.com:dmitry-seredinov-g12/tds-module.git",
                     "reference": "2b1b7cb2fa07ef5557d62bb2cbf354aba67e4600"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/dmitry-seredinov-g12/tds-module/zipball/2b1b7cb2fa07ef5557d62bb2cbf354aba67e4600",
+                    "reference": "2b1b7cb2fa07ef5557d62bb2cbf354aba67e4600",
+                    "shasum": ""
                 },
                 "require": {
                     "illuminate/contracts": "^10.0",
@@ -2047,6 +2357,16 @@
                     "G12Com",
                     "laravel",
                     "tds-module"
+                ],
+                "support": {
+                    "source": "https://github.com/dmitry-seredinov-g12/tds-module/tree/1.0.4",
+                    "issues": "https://github.com/dmitry-seredinov-g12/tds-module/issues"
+                },
+                "funding": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/G12Com"
+                    }
                 ]
             },
             {
@@ -2055,8 +2375,14 @@
                 "version_normalized": "1.0.5.0",
                 "source": {
                     "type": "git",
-                    "url": "http://git.at.home/G12/tds-module.git",
+                    "url": "git@github.com:dmitry-seredinov-g12/tds-module.git",
                     "reference": "a0ea2dcd137cbb0c1f93ee7ddd0c70cff22214bb"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/dmitry-seredinov-g12/tds-module/zipball/a0ea2dcd137cbb0c1f93ee7ddd0c70cff22214bb",
+                    "reference": "a0ea2dcd137cbb0c1f93ee7ddd0c70cff22214bb",
+                    "shasum": ""
                 },
                 "require": {
                     "illuminate/contracts": "^10.0",
@@ -2149,6 +2475,16 @@
                     "G12Com",
                     "laravel",
                     "tds-module"
+                ],
+                "support": {
+                    "source": "https://github.com/dmitry-seredinov-g12/tds-module/tree/1.0.5",
+                    "issues": "https://github.com/dmitry-seredinov-g12/tds-module/issues"
+                },
+                "funding": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/G12Com"
+                    }
                 ]
             },
             {
@@ -2157,8 +2493,14 @@
                 "version_normalized": "1.0.6.0",
                 "source": {
                     "type": "git",
-                    "url": "http://git.at.home/G12/tds-module.git",
+                    "url": "git@github.com:dmitry-seredinov-g12/tds-module.git",
                     "reference": "40506dce62fbcab49abb571b3bab0bb49315c901"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/dmitry-seredinov-g12/tds-module/zipball/40506dce62fbcab49abb571b3bab0bb49315c901",
+                    "reference": "40506dce62fbcab49abb571b3bab0bb49315c901",
+                    "shasum": ""
                 },
                 "require": {
                     "illuminate/contracts": "^10.0",
@@ -2251,6 +2593,16 @@
                     "G12Com",
                     "laravel",
                     "tds-module"
+                ],
+                "support": {
+                    "source": "https://github.com/dmitry-seredinov-g12/tds-module/tree/1.0.6",
+                    "issues": "https://github.com/dmitry-seredinov-g12/tds-module/issues"
+                },
+                "funding": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/G12Com"
+                    }
                 ]
             },
             {
@@ -2259,8 +2611,14 @@
                 "version_normalized": "1.0.7.0",
                 "source": {
                     "type": "git",
-                    "url": "http://git.at.home/G12/tds-module.git",
+                    "url": "git@github.com:dmitry-seredinov-g12/tds-module.git",
                     "reference": "7bd4a59859dfc0251265389c84a3bd3bec1b6f9f"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/dmitry-seredinov-g12/tds-module/zipball/7bd4a59859dfc0251265389c84a3bd3bec1b6f9f",
+                    "reference": "7bd4a59859dfc0251265389c84a3bd3bec1b6f9f",
+                    "shasum": ""
                 },
                 "require": {
                     "illuminate/contracts": "^10.0",
@@ -2353,6 +2711,16 @@
                     "G12Com",
                     "laravel",
                     "tds-module"
+                ],
+                "support": {
+                    "source": "https://github.com/dmitry-seredinov-g12/tds-module/tree/1.0.7",
+                    "issues": "https://github.com/dmitry-seredinov-g12/tds-module/issues"
+                },
+                "funding": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/G12Com"
+                    }
                 ]
             },
             {
@@ -2361,8 +2729,14 @@
                 "version_normalized": "1.0.8.0",
                 "source": {
                     "type": "git",
-                    "url": "http://git.at.home/G12/tds-module.git",
+                    "url": "git@github.com:dmitry-seredinov-g12/tds-module.git",
                     "reference": "7825812ce883d76b73b296ae0e2ac4a115639506"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/dmitry-seredinov-g12/tds-module/zipball/7825812ce883d76b73b296ae0e2ac4a115639506",
+                    "reference": "7825812ce883d76b73b296ae0e2ac4a115639506",
+                    "shasum": ""
                 },
                 "require": {
                     "archtechx/enums": "^1.0",
@@ -2456,6 +2830,16 @@
                     "G12Com",
                     "laravel",
                     "tds-module"
+                ],
+                "support": {
+                    "source": "https://github.com/dmitry-seredinov-g12/tds-module/tree/1.0.8",
+                    "issues": "https://github.com/dmitry-seredinov-g12/tds-module/issues"
+                },
+                "funding": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/G12Com"
+                    }
                 ]
             },
             {
@@ -2464,8 +2848,14 @@
                 "version_normalized": "1.0.9.0",
                 "source": {
                     "type": "git",
-                    "url": "http://git.at.home/G12/tds-module.git",
+                    "url": "git@github.com:dmitry-seredinov-g12/tds-module.git",
                     "reference": "af3578db445608ab7c54dc489897cbacf368086a"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/dmitry-seredinov-g12/tds-module/zipball/af3578db445608ab7c54dc489897cbacf368086a",
+                    "reference": "af3578db445608ab7c54dc489897cbacf368086a",
+                    "shasum": ""
                 },
                 "require": {
                     "archtechx/enums": "^1.0",
@@ -2559,6 +2949,16 @@
                     "G12Com",
                     "laravel",
                     "tds-module"
+                ],
+                "support": {
+                    "source": "https://github.com/dmitry-seredinov-g12/tds-module/tree/1.0.9",
+                    "issues": "https://github.com/dmitry-seredinov-g12/tds-module/issues"
+                },
+                "funding": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/G12Com"
+                    }
                 ]
             }
         ]

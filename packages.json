@@ -1,15 +1,16 @@
 {
     "packages": [],
     "includes": {
-        "include/all$22e4917b86b7fcdf6fc1319830d887244562d71f.json": {
-            "sha1": "22e4917b86b7fcdf6fc1319830d887244562d71f"
+        "include/all$f1961f39cbc3b18aceec3789003576c4932a08a2.json": {
+            "sha1": "f1961f39cbc3b18aceec3789003576c4932a08a2"
         }
     },
-    "metadata-url": "/p2/%package%.json",
+    "metadata-url": "/satis/p2/%package%.json",
     "available-packages": [
         "g12com/composer-installer-plugin",
         "g12com/core-plugin",
         "g12com/foundation-plugin",
-        "g12com/tds-module"
+        "g12com/tds-module",
+        "g12com/unified-communications-module"
     ]
 }

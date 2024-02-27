@@ -7,8 +7,14 @@
                 "version_normalized": "1.0.0.0",
                 "source": {
                     "type": "git",
-                    "url": "http://git.at.home/G12/foundation-plugin.git",
+                    "url": "git@github.com:dmitry-seredinov-g12/foundation-plugin.git",
                     "reference": "0428f85d1988c90cbb4fc7a9a932e3c26372f148"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/dmitry-seredinov-g12/foundation-plugin/zipball/0428f85d1988c90cbb4fc7a9a932e3c26372f148",
+                    "reference": "0428f85d1988c90cbb4fc7a9a932e3c26372f148",
+                    "shasum": ""
                 },
                 "require": {
                     "illuminate/contracts": "^10.0",
@@ -95,6 +101,16 @@
                     "G12Com",
                     "foundation-plugin",
                     "laravel"
+                ],
+                "support": {
+                    "source": "https://github.com/dmitry-seredinov-g12/foundation-plugin/tree/1.0.0",
+                    "issues": "https://github.com/dmitry-seredinov-g12/foundation-plugin/issues"
+                },
+                "funding": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/G12Com"
+                    }
                 ]
             }
         ]
