@@ -1,8 +1,8 @@
 {
     "packages": [],
     "includes": {
-        "include/all$f1961f39cbc3b18aceec3789003576c4932a08a2.json": {
-            "sha1": "f1961f39cbc3b18aceec3789003576c4932a08a2"
+        "include/all$d3a033fb83a58a40f353ac088f12ea5b1706cd8a.json": {
+            "sha1": "d3a033fb83a58a40f353ac088f12ea5b1706cd8a"
         }
     },
     "metadata-url": "/satis/p2/%package%.json",
@@ -11,6 +11,7 @@
         "g12com/core-plugin",
         "g12com/foundation-plugin",
         "g12com/tds-module",
-        "g12com/unified-communications-module"
+        "g12com/unified-communications-module",
+        "g12com/users-management-module"
     ]
 }
