@@ -1,5 +1,59 @@
 {
     "packages": {
-        "g12com/composer-installer-plugin": []
+        "g12com/composer-installer-plugin": [
+            {
+                "name": "g12com/composer-installer-plugin",
+                "version": "dev-main",
+                "version_normalized": "dev-main",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:dmitry-seredinov-g12/composer-installer-plugin.git",
+                    "reference": "66f1035c059173d946917eee3ec56df5c2771f60"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/dmitry-seredinov-g12/composer-installer-plugin/zipball/66f1035c059173d946917eee3ec56df5c2771f60",
+                    "reference": "66f1035c059173d946917eee3ec56df5c2771f60",
+                    "shasum": ""
+                },
+                "require": {
+                    "composer-plugin-api": "^2.3",
+                    "php": "^8.2"
+                },
+                "require-dev": {
+                    "composer/composer": "^2.6",
+                    "pestphp/pest": "^2.25",
+                    "symfony/var-dumper": "^6.3"
+                },
+                "time": "2024-02-23T12:21:42+00:00",
+                "default-branch": true,
+                "type": "composer-plugin",
+                "extra": {
+                    "class": "G12com\\Composer\\Portal\\Plugin"
+                },
+                "autoload": {
+                    "psr-0": {
+                        "G12com\\Composer\\": "src/"
+                    },
+                    "psr-4": {
+                        "Tests\\": "tests/"
+                    }
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Dmytro Seredinov",
+                        "email": "dmytro.seredinov@gmail.com"
+                    }
+                ],
+                "description": "Custom installer for TDS Portal Modules and Plugins",
+                "support": {
+                    "source": "https://github.com/dmitry-seredinov-g12/composer-installer-plugin/tree/main",
+                    "issues": "https://github.com/dmitry-seredinov-g12/composer-installer-plugin/issues"
+                }
+            }
+        ]
     }
 }

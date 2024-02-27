@@ -1,5 +1,119 @@
 {
     "packages": {
-        "g12com/foundation-plugin": []
+        "g12com/foundation-plugin": [
+            {
+                "name": "g12com/foundation-plugin",
+                "version": "dev-main",
+                "version_normalized": "dev-main",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:dmitry-seredinov-g12/foundation-plugin.git",
+                    "reference": "5fd0fd5a0d726dfec8b2e24579a53ed108860871"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/dmitry-seredinov-g12/foundation-plugin/zipball/5fd0fd5a0d726dfec8b2e24579a53ed108860871",
+                    "reference": "5fd0fd5a0d726dfec8b2e24579a53ed108860871",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/contracts": "^10.0",
+                    "php": "^8.2",
+                    "spatie/laravel-package-tools": "^1.14.0"
+                },
+                "require-dev": {
+                    "laravel/pint": "^1.0",
+                    "nunomaduro/collision": "^7.8",
+                    "orchestra/testbench": "^8.8",
+                    "pestphp/pest": "^2.20",
+                    "pestphp/pest-plugin-arch": "^2.5",
+                    "pestphp/pest-plugin-laravel": "^2.0"
+                },
+                "time": "2024-02-27T11:24:55+00:00",
+                "default-branch": true,
+                "type": "tds-plugin",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "G12Com\\FoundationPlugin\\FoundationPluginServiceProvider"
+                        ],
+                        "aliases": {
+                            "FoundationPlugin": "G12Com\\FoundationPlugin\\Facades\\FoundationPlugin"
+                        }
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "G12Com\\FoundationPlugin\\": "src/",
+                        "G12Com\\FoundationPlugin\\Database\\Factories\\": "database/factories/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "G12Com\\FoundationPlugin\\Tests\\": "tests/",
+                        "Workbench\\App\\": "workbench/app/"
+                    }
+                },
+                "scripts": {
+                    "post-autoload-dump": [
+                        "@composer run prepare"
+                    ],
+                    "clear": [
+                        "@php vendor/bin/testbench package:purge-foundation-plugin --ansi"
+                    ],
+                    "prepare": [
+                        "@php vendor/bin/testbench package:discover --ansi"
+                    ],
+                    "build": [
+                        "@composer run prepare",
+                        "@php vendor/bin/testbench workbench:build --ansi"
+                    ],
+                    "start": [
+                        "Composer\\Config::disableProcessTimeout",
+                        "@composer run build",
+                        "@php vendor/bin/testbench serve"
+                    ],
+                    "analyse": [
+                        "vendor/bin/phpstan analyse"
+                    ],
+                    "test": [
+                        "vendor/bin/pest"
+                    ],
+                    "test-coverage": [
+                        "vendor/bin/pest --coverage"
+                    ],
+                    "format": [
+                        "vendor/bin/pint"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Dmytro Seredinov",
+                        "email": "dmytro.seredinov@gmail.com",
+                        "role": "Developer"
+                    }
+                ],
+                "description": "Foundation Plugin for TDS Platform and TDS Modules",
+                "homepage": "https://github.com/g12com/foundation-plugin",
+                "keywords": [
+                    "G12Com",
+                    "foundation-plugin",
+                    "laravel"
+                ],
+                "support": {
+                    "source": "https://github.com/dmitry-seredinov-g12/foundation-plugin/tree/main",
+                    "issues": "https://github.com/dmitry-seredinov-g12/foundation-plugin/issues"
+                },
+                "funding": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/G12Com"
+                    }
+                ]
+            }
+        ]
     }
 }

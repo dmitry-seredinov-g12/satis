@@ -1,5 +1,132 @@
 {
     "packages": {
-        "g12com/unified-communications-module": []
+        "g12com/unified-communications-module": [
+            {
+                "name": "g12com/unified-communications-module",
+                "version": "dev-main",
+                "version_normalized": "dev-main",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:dmitry-seredinov-g12/unified-communications-module.git",
+                    "reference": "96997f1c388a526e00936e58588e07b165f00c5a"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/dmitry-seredinov-g12/unified-communications-module/zipball/96997f1c388a526e00936e58588e07b165f00c5a",
+                    "reference": "96997f1c388a526e00936e58588e07b165f00c5a",
+                    "shasum": ""
+                },
+                "require": {
+                    "filament/filament": "^3.2",
+                    "g12com/tds-module": "^1.0",
+                    "hashids/hashids": "^4.1",
+                    "illuminate/contracts": "^10.0",
+                    "livewire/livewire": "^3.4",
+                    "lorisleiva/laravel-actions": "^2.7",
+                    "lorisleiva/lody": "^0.4.0",
+                    "matt-daneshvar/eloquent-hashids": "^1.0",
+                    "pascaldevink/shortuuid": "^4.0",
+                    "php": "^8.2",
+                    "socoladaica/laravel-table-prefix": "^1.2",
+                    "spatie/laravel-data": "^3.11",
+                    "spatie/laravel-model-states": "^2.6",
+                    "spatie/laravel-options": "^1.1",
+                    "spatie/laravel-package-tools": "^1.14.0",
+                    "spatie/laravel-schemaless-attributes": "^2.4"
+                },
+                "require-dev": {
+                    "laravel/pint": "^1.0",
+                    "nunomaduro/collision": "^7.8",
+                    "orchestra/testbench": "^8.8",
+                    "pestphp/pest": "^2.20",
+                    "pestphp/pest-plugin-arch": "^2.5",
+                    "pestphp/pest-plugin-laravel": "^2.0"
+                },
+                "time": "2024-02-27T11:16:49+00:00",
+                "default-branch": true,
+                "type": "tds-module",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "G12Com\\UnifiedCommunications\\UnifiedCommunicationsServiceProvider"
+                        ],
+                        "aliases": {
+                            "UnifiedCommunications": "G12Com\\UnifiedCommunications\\Facades\\UnifiedCommunications"
+                        }
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "G12Com\\UnifiedCommunications\\": "src/",
+                        "G12Com\\UnifiedCommunications\\Database\\Factories\\": "database/factories/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "G12Com\\UnifiedCommunications\\Tests\\": "tests/",
+                        "Workbench\\App\\": "workbench/app/"
+                    }
+                },
+                "scripts": {
+                    "post-autoload-dump": [
+                        "@composer run prepare"
+                    ],
+                    "clear": [
+                        "@php vendor/bin/testbench package:purge-unified-communications-module --ansi"
+                    ],
+                    "prepare": [
+                        "@php vendor/bin/testbench package:discover --ansi"
+                    ],
+                    "build": [
+                        "@composer run prepare",
+                        "@php vendor/bin/testbench workbench:build --ansi"
+                    ],
+                    "start": [
+                        "Composer\\Config::disableProcessTimeout",
+                        "@composer run build",
+                        "@php vendor/bin/testbench serve"
+                    ],
+                    "analyse": [
+                        "vendor/bin/phpstan analyse"
+                    ],
+                    "test": [
+                        "vendor/bin/pest"
+                    ],
+                    "test-coverage": [
+                        "vendor/bin/pest --coverage"
+                    ],
+                    "format": [
+                        "vendor/bin/pint"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Dmytro Seredinov",
+                        "email": "dmytro.seredinov@gmail.com",
+                        "role": "Developer"
+                    }
+                ],
+                "description": "Univied Communications Service's  Module  for TDS",
+                "homepage": "https://github.com/g12com/unified-communications-module",
+                "keywords": [
+                    "G12Com",
+                    "laravel",
+                    "unified-communications-module"
+                ],
+                "support": {
+                    "source": "https://github.com/dmitry-seredinov-g12/unified-communications-module/tree/main",
+                    "issues": "https://github.com/dmitry-seredinov-g12/unified-communications-module/issues"
+                },
+                "funding": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/G12Com"
+                    }
+                ]
+            }
+        ]
     }
 }
